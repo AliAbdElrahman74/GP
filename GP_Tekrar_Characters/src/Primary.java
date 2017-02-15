@@ -34,7 +34,8 @@ public class Primary {
 			arr.add(s);
 			String word = rs.getString(2);
 			s = rs.getString(3);
-			word+="&"+s;
+			word+="&";
+			word += s;
 			s = rs.getString(4);
 			arr.add(s);
 			
@@ -42,6 +43,7 @@ public class Primary {
 			arr.add(s);
 			
 			temp.put(word, arr);
+			//System.out.println(word + " " + arr.get(1));
 			
 		}
 		rs.close();
@@ -65,12 +67,12 @@ public class Primary {
 
 		for (String key : m.keySet()) {
 	       arr = m.get(key);
-	       states = arr.get(1);
+	       states = arr.get(2);
 	       if(states.equals("new")){
 	    	   //System.out.println(key);
 	    	   String temp[] = key.split("&");
 	    		sql = "INSERT INTO "+ tableName +"( `word1`, `word2` , `count`) VALUES "
-	    				+ "('" + temp[0] + "'" + ",'" + temp[1] + "',"  + arr.get(0) + ");";
+	    				+ "('" + temp[0] + "'" + ",'" + temp[1] + "',"  + arr.get(1) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }
@@ -85,7 +87,6 @@ public class Primary {
 	public static void updateCounter(String tableName, String id, String counter)
 			throws SQLException {
 		PreparedStatement stmt;
-
 		// update counter in primary
 		String sql = "Update " + tableName
 				+ " set count = " + counter + " where id = " + id + ";";

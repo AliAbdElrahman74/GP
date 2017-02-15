@@ -60,8 +60,7 @@ public class main {
 		int window = 3;
 		
 	    String[] paths = {"1.docx"};
-		//String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
-	    String chars = "و";
+		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
 		map = Primary.selection(chars.charAt(c));
@@ -90,28 +89,26 @@ public class main {
 					for(int w = 0; w < characters.length() ; w ++){
 						String c1_c2 = "";
 						c1_c2 += words[i].charAt(j) + "&" + characters.charAt(w);
-						if (c1_c2.charAt(0) == chars.charAt(c)) {
-							if (map.get(c1_c2) == null) { // new
-								ArrayList<String> arr = new ArrayList<String>();
+						if (map.get(c1_c2) == null) { // new
+							ArrayList<String> arr = new ArrayList<String>();
+							Primary.primaryLastId ++;
+							arr.add("" + Primary.primaryLastId);
+							arr.add("1"); // counter
+							arr.add("new"); // status								
+							map.put(c1_c2, arr);
 
-								arr.add("1"); // counter
-								arr.add("new"); // status								
-								map.put(c1_c2, arr);
-
-							} else { // already exist
-
-								ArrayList<String> arr = new ArrayList<String>();
-
-								arr = map.get(c1_c2);
-								arr.set(0, Integer.toString(Integer
-										.parseInt(arr.get(0)) + 1));
-								if (arr.get(1).equals("old")) {
-									arr.set(1, "updated");
-								}
-								map.replace(c1_c2, arr);
+						} else { // already exist
+							ArrayList<String> arr = new ArrayList<String>();
+							arr = map.get(c1_c2);
+							arr.set(1, Integer.toString(Integer
+									.parseInt(arr.get(1)) + 1));
+							if (arr.get(2).equals("old")) {
+								arr.set(2, "updated");
 							}
+							map.replace(c1_c2, arr);
 						}
 					}
+					
 				}
 			}
 		}
@@ -128,7 +125,7 @@ public class main {
 	public static void main(String[] args) throws InvalidFormatException,
 			IOException, SQLException {
 		
-		String chars = "و";
+		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
 		for (int c = 0; c < chars.length(); c++) {
 			fun(c);
 		}
