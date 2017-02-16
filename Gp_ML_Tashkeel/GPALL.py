@@ -8,27 +8,27 @@ class Database:
     def __init__(self):
         self.db1 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='',
-                     db='gpmodawwana',
+                     passwd='20130163',
+                     db='gp',
                      charset='UTF8',
                      use_unicode=True)
         self.db2 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='',
-                     db='gpfrequency',
+                     passwd='20130163',
+                     db='gpFrequency_4',
                      charset='UTF8',
                      use_unicode=True)
-    
+
 DB = Database()
 cursor1 = DB.db1.cursor()
 cursor2 = DB.db2.cursor()
 def getIdPrimary(word):
-    
+
     table = "primary_t"
     word = unicode(word, "utf-8")
     alef = unicode("ا", "utf-8")
     num = ord(word[0]) - ord(alef[0])
-    
+
     if num < 0:
         table += "_" + str(-1 * num)
     else:
@@ -38,10 +38,10 @@ def getIdPrimary(word):
        cursor1.execute(sql)
        results = cursor1.fetchall()
        return results[0][0]
-                     
+
     except:
-       print ("Error: unable to fecth data")  
- 
+       print ("Error: unable to fecth data")
+
 def getWords(word):
     primaryId = getIdPrimary(word)
     table = "secondary_t"
@@ -59,10 +59,10 @@ def getWords(word):
        cursor1.execute(sql)
        results = cursor1.fetchall()
        return results
-                     
+
     except:
-       print ("Error: unable to fecth data")    
-    
+       print ("Error: unable to fecth data")
+
 def getCounterOfTwoWords(word1, word2):
     table = "primary_t"
     alef = unicode("ا", "utf-8")
@@ -71,16 +71,16 @@ def getCounterOfTwoWords(word1, word2):
         table += "_" + str(-1 * num)
     else:
         table += str(num)
-    sql = "SELECT count from " + table + " where word1 = '" + word1 + "' and word2 = '" + word2 + "'  ;" 
+    sql = "SELECT count from " + table + " where word1 = '" + word1 + "' and word2 = '" + word2 + "'  ;"
     try:
        on_error = "replace"
        encoding = "utf-8"
        cursor2.execute(sql)
        results = cursor2.fetchall()
        return results[0][0]
-                     
+
     except:
-       print ("Error: unable to fecth data") 
+       print ("Error: unable to fecth data")
 
 def removeSamples(string):
     samples = "+_()*&^%$#@!><؛×÷‘|:/،ـ][؟,.’|~}{-=" + '"'
@@ -89,7 +89,7 @@ def removeSamples(string):
     for i in range (0, len(string)):
         if (samples.find(string[i]) == -1):
             newString += string[i]
-        
+
     return newString;
 
 def removeTashkeel(word):
@@ -97,7 +97,7 @@ def removeTashkeel(word):
     allTashkeel = unicode("ًٌَُِّ~ٍْ", "utf-8")
     for i in range (0, len(word)):
         if allTashkeel.find(word[i]) == -1:
-            resString += word[i];        
+            resString += word[i];
     return resString;
 
 
@@ -110,7 +110,7 @@ def fun(word1, word2):
     word2 = removeTashkeel(word2)
     result = getCounterOfTwoWords(word1, word2)
     return result
-    
+
 
 result =""
 counter = 0
@@ -120,12 +120,12 @@ arr = x.split(" ")
 window = []
 for i in range(len(arr)):
     window = []
-    allWords = getWords(arr[i])  # return all Diacrictic Words 
+    allWords = getWords(arr[i])  # return all Diacrictic Words
     if len(allWords) == 0:
         result += arr[i]
         result +=" "
         continue
-    
+
     for prev in range(i-1,-1,-1):
         window.append(arr[prev])
         counter += 1
@@ -137,7 +137,7 @@ for i in range(len(arr)):
         counter += 1
         if counter == windowSize:
             break
-    
+
     sum_prob = 0
     max_prob = -100000000
     index = -1
@@ -154,5 +154,5 @@ for i in range(len(arr)):
 
     result += removeSamples(allWords[index][0])
     result +=" "
-    
+
 print result
