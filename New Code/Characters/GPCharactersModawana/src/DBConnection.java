@@ -1,11 +1,10 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-	private static String DBName = "characterModawana";
-	private static String Password = "20130163";
+	private static String DBName = "gpcharactersmodwwana";
+	private static String Password = "20130133";
 	
 	private static Connection connection = null;
 
@@ -14,7 +13,7 @@ public class DBConnection {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 				connection = DriverManager
-					.getConnection("jdbc:mysql://localhost:3306/characterModawana?useUnicode=yes&characterEncoding=UTF-8"  , 
+					.getConnection("jdbc:mysql://localhost:3306/gpcharactersmodwwana?useUnicode=yes&characterEncoding=UTF-8"  , 
 							"root" , Password);
 			return connection;
 		} catch (ClassNotFoundException e) {

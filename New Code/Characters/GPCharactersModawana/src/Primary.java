@@ -1,4 +1,3 @@
-
 import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,7 +19,7 @@ public class Primary {
 			tableName = "primary_t" + (c - 'ا');
 		
 		String sql = "SELECT * FROM " + tableName + "; ";
-		System.out.println(sql);
+		//System.out.println(sql);
 		PreparedStatement stmt;
 		stmt = con.prepareStatement(sql);
 		ResultSet rs = stmt.executeQuery();

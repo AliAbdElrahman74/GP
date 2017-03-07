@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -69,7 +68,7 @@ public class Main {
 				newString += arr[i]+" ";
 			}
 			else{
-				if(arr[i].length() == 1 && bool == true){
+				if(arr[i].length() == 1 && bool == true && newString.length() > 1){
 					bool = true;
 				    newString = newString.substring(0, newString.length()-1);
 					newString+=arr[i]+" ";
@@ -93,10 +92,7 @@ public class Main {
 		}
 		
 		////////// OUTPUT/////////////////
-		System.out.println(newArr.size());
 		
-		for (int i = 0; i < newArr.size(); i++)
-			System.out.println(newArr.get(i));
 		String narr[]=newArr.toArray(new String[newArr.size()]);
 
 		return narr;
@@ -124,13 +120,13 @@ public class Main {
 	public static void main(String[] args) throws IOException, InvalidFormatException, SQLException {
 		   
 	    String[] allwords ;
-	    String[] paths = {"1.docx"};
+	    String[] paths = {"2.docx"};
 	    System.out.println("Loading From Database");
-	    String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإ";
+	    String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
 	    for (int cnt = 0 ; cnt<chars.length() ; cnt++){
 	    	
 	    	char c = chars.charAt(cnt);
-	    	System.out.print("Working on letter" + c);
+	    	System.out.println("Working on letter" + c);
 		    Primary p = new Primary();
 		    Secondary s = new Secondary();
 		    HashMap<String, ArrayList<String> > primaryMap = p.selection(c);
@@ -138,14 +134,17 @@ public class Main {
 		    int primaryLastIndex = ++ p.primaryLastId, secondaryLastIndex = ++ s.secondaryLastId ;
 		    for (int z = 0 ; z < paths.length ; z++)
 		    {
-		    	System.out.println("HEre");
 		    	allwords = readFile(paths[z]);
 				allwords = removeSentence(allwords);
 
 		    	for ( int i = 0 ; i < allwords.length ;i++)
 		    	{
-		    		for (int k = 0 ; k< allwords[i].length();z++) {
+		    		for (int k = 0 ; k< allwords[i].length();k++) {
+		    			String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
+		    			if (allTashkeel.indexOf(allwords[i].charAt(k)) == -1)
+		    				continue;
 		    			String s1 = "",s2, primaryId ;
+		    			s1 += allwords[i].charAt(k-1);
 			    		s1 += allwords[i].charAt(k);
 			    		s2 =s1 ;
 			    		s2=removeSamples(s2);
