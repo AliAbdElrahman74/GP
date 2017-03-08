@@ -140,12 +140,26 @@ public class Main {
 		    	for ( int i = 0 ; i < allwords.length ;i++)
 		    	{
 		    		for (int k = 0 ; k< allwords[i].length();k++) {
-		    			String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
-		    			if (allTashkeel.indexOf(allwords[i].charAt(k)) == -1)
-		    				continue;
+		    			
+		    			if(allwords[i].charAt(k) != c)
+							continue;
+		    			
 		    			String s1 = "",s2, primaryId ;
-		    			s1 += allwords[i].charAt(k-1);
-			    		s1 += allwords[i].charAt(k);
+		    			String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
+		    			
+		    			int tashkeelCounter = 1;
+						s1 = "" + allwords[i].charAt(k);
+						while((k + tashkeelCounter) < allwords[i].length()){
+							if (allTashkeel.indexOf(allwords[i].charAt(k + tashkeelCounter)) != -1)
+								s1 += allwords[i].charAt(k + tashkeelCounter);
+							else
+								break;
+							tashkeelCounter ++;
+						}
+						
+						if(tashkeelCounter == 1)
+							continue;
+		    			
 			    		s2 =s1 ;
 			    		s2=removeSamples(s2);
 			    		s2=removeTashkeel(s2);
