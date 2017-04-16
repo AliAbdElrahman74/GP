@@ -116,9 +116,8 @@ public class main {
 	public static void fun(int c) throws InvalidFormatException, IOException, SQLException{
 		int window = 3;
 		String s, word1, word2, s1_s2 = "";
-	    String[] paths = {"2.docx"};
-		//String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
-	    String chars = "تثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+	    	String[] paths = {"samir1.docx"};
+		//String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
 		map = Primary.selection(chars.charAt(c));
@@ -190,24 +189,24 @@ public class main {
 					if (s1_s2.charAt(0) == chars.charAt(c)) {
 						if (map.get(s1_s2) == null) { // new
 							ArrayList<String> arr = new ArrayList<String>();
-							arr.add(Integer.toString(Primary.primaryLastId));
+							//arr.add(Integer.toString(Primary.primaryLastId));
 							arr.add("1"); // counter
 							arr.add("new"); // status
 //							if(s1_s2.charAt(s1_s2.length()-1)=='.'){ // mai
 //								s1_s2.substring(0,s1_s2.length()-1);
 							s1_s2 = s1_s2.replace(".", "");
 							//System.out.println(s1_s2);
-							Primary.primaryLastId = Primary.primaryLastId + 1 ;
+							//Primary.primaryLastId = Primary.primaryLastId + 1 ;
 							map.put(s1_s2, arr);
  
 						} else { // already exist
 							ArrayList<String> arr = new ArrayList<String>();
  
 							arr = map.get(s1_s2);
-							arr.set(1, Integer.toString(Integer
-									.parseInt(arr.get(1)) + 1));
-							if (arr.get(2).equals("old")) {
-								arr.set(2, "updated");
+							arr.set(0, Integer.toString(Integer
+									.parseInt(arr.get(0)) + 1));
+							if (arr.get(1).equals("old")) {
+								arr.set(1, "updated");
 							}
 							map.replace(s1_s2, arr);
 						}
@@ -219,6 +218,7 @@ public class main {
 //		System.out.println(map.toString());
 		// insert into DB
 		System.out.println("Inserting into Database table: " + chars.charAt(c));
+		System.out.println(map.size());
 		Primary.insertion(map, chars.charAt(c));
 		System.out.println("OK character " + "  " + chars.charAt(c) + " index  " + c);
  
@@ -227,7 +227,7 @@ public class main {
 	public static void main(String[] args) throws InvalidFormatException,
 			IOException, SQLException {
  
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
 		for (int c = 0; c < chars.length(); c++) {
 			fun(c);
 		}

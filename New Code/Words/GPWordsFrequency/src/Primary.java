@@ -11,7 +11,6 @@ import org.omg.CORBA.PUBLIC_MEMBER;
  
 public class Primary {
 	static Connection con = DBConnection.getConnection();
-	static int primaryLastId;
 	public static HashMap<String, ArrayList<String> > selection(char c) throws SQLException {
 		String tableName;
 		if(c == 'آ' || c == 'ء' || c == 'أ' || c == 'إ')
@@ -29,12 +28,11 @@ public class Primary {
  
 		while (rs.next()) {
 			ArrayList<String>arr = new ArrayList<>();
-			String s = rs.getString(1);
-			primaryLastId = Integer.parseInt(s);
-			arr.add(s);
+			
 			String word = rs.getString(2);
-			s = rs.getString(3);
+			String s = rs.getString(3);
 			word+="&"+s;
+			
 			s = rs.getString(4);
 			arr.add(s);
  
@@ -60,23 +58,26 @@ public class Primary {
 			tableName = "primary_t_" + (-1 * (c - 'ا'));
 		else
 			tableName = "primary_t" + (c - 'ا');
- 
+		
+		//System.out.println(tableName);
  
 		ArrayList<String> arr = new ArrayList<String>();
  
 		for (String key : m.keySet()) {
 	       arr = m.get(key);
-	       states = arr.get(2);
+	       states = arr.get(1);
+	       String temp[] = key.split("&");
 	       if(states.equals("new")){
 	    	   //System.out.println(key);
-	    	   String temp[] = key.split("&");
+	    	   //System.out.println("insert");
 	    		sql = "INSERT INTO "+ tableName +"(`word1`, `word2` , `count`) VALUES "
-	    				+ "( '" + temp[0] + "'" + ",'" + temp[1] + "',"  + arr.get(1) + ");";
+	    				+ "( '" + temp[0] + "'" + ",'" + temp[1] + "',"  + arr.get(0) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }
 	       else if(states.equals("updated")){
-	    	   updateCounter(tableName,arr.get(0), arr.get(1));
+	    	   //System.out.println("update");
+	    	   updateCounter(tableName,temp[0], temp[1], arr.get(1));
 	    	   //System.out.println("Here");
 	       }
  
@@ -84,13 +85,13 @@ public class Primary {
  
 	}
  
-	public static void updateCounter(String tableName, String id, String counter)
+	public static void updateCounter(String tableName, String word1, String word2, String counter)
 			throws SQLException {
 		PreparedStatement stmt;
  
 		// update counter in primary
 		String sql = "Update " + tableName
-				+ " set count = " + counter + " where id = " + id + ";";
+				+ " set count = " + counter + " where word1 = " + word1 + " and word2 = " + word2 + ";";
 		stmt = con.prepareStatement(sql);
 		stmt.executeUpdate();
  

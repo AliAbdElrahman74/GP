@@ -108,19 +108,21 @@ public class main {
 	public static void fun(int c) throws InvalidFormatException, IOException, SQLException{
 		int window = 3;
 		
-	    String[] paths = {"2.docx"};
+	    	String[] paths = {"ali1_5.docx"};
 		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
 		map = Primary.selection(chars.charAt(c));
 		System.out.println("Start Coding");
 		for (int z = 0; z < paths.length; z++) {
+			//System.out.println("here");
 			String[] words = readFile(paths[z]);
+			//System.out.println("here");
 			words = removeSentence(words);
 			for (int i = 0; i < (words.length) ; i++) {
 				words[i] = removeSamples(words[i]);
 				for(int j = 0; j < words[i].length() ; j ++){
-					String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
 					if(words[i].charAt(j) != chars.charAt(c))
 						continue;
 					
@@ -165,8 +167,8 @@ public class main {
 						c1_c2 += word1 + "&" + characters.charAt(w);
 						if (map.get(c1_c2) == null) { // new
 							ArrayList<String> arr = new ArrayList<String>();
-							Primary.primaryLastId ++;
-							arr.add("" + Primary.primaryLastId);
+							//Primary.primaryLastId ++;
+							//arr.add("" + Primary.primaryLastId);
 							arr.add("1"); // counter
 							arr.add("new"); // status								
 							map.put(c1_c2, arr);
@@ -174,10 +176,10 @@ public class main {
 						} else { // already exist
 							ArrayList<String> arr = new ArrayList<String>();
 							arr = map.get(c1_c2);
-							arr.set(1, Integer.toString(Integer
-									.parseInt(arr.get(1)) + 1));
-							if (arr.get(2).equals("old")) {
-								arr.set(2, "updated");
+							arr.set(0, Integer.toString(Integer
+									.parseInt(arr.get(0)) + 1));
+							if (arr.get(1).equals("old")) {
+								arr.set(1, "updated");
 							}
 							map.replace(c1_c2, arr);
 						}
