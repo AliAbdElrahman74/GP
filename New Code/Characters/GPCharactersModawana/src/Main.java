@@ -36,7 +36,7 @@ public class Main {
 	}
 
 	public static String removeSamples(String string) {
-		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"';
+		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"' + ";";
 		String newString = "";
 		for (int i = 0; i < string.length(); i++) {
 			if (samples.indexOf(string.charAt(i)) == -1) {
@@ -120,7 +120,7 @@ public class Main {
 	public static void main(String[] args) throws IOException, InvalidFormatException, SQLException {
 		   
 	    String[] allwords ;
-	    String[] paths = {"2.docx"};
+	    String[] paths = {"1.docx","2_amira.docx"};
 	    System.out.println("Loading From Database");
 	    String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
 	    for (int cnt = 0 ; cnt<chars.length() ; cnt++){

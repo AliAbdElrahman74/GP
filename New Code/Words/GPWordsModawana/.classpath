@@ -15,12 +15,6 @@
 	<classpathentry kind="lib" path="lib/lib/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="lib/lib/junit-4.12.jar"/>
 	<classpathentry kind="lib" path="lib/lib/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5-bin.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/lib/c3p0-0.9.1-pre6.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/lib/jboss-common-jdbc-wrapper.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/lib/jboss-common-jdbc-wrapper-src.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/lib/protobuf-java-2.6.0.jar"/>
-	<classpathentry kind="lib" path="D:/GP/mysql-connector-java-6.0.5/mysql-connector-java-6.0.5/lib/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="D:/GP/common-lang3.jar/common-lang3.jar"/>
+	<classpathentry kind="lib" path="mysql-connector-java-5.1.38-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

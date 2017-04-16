@@ -64,8 +64,8 @@ public class Primary {
 	       arr = m.get(key);
 	       states = arr.get(2);
 	       if(states.equals("new")){
-	    		sql = "INSERT INTO "+ tableName +"(`id`, `word`, `count`) VALUES "
-	    				+ "(" + arr.get(0) + ",'" + key + "'," + arr.get(1) + ");";
+	    		sql = "INSERT INTO "+ tableName +"(`word`, `count`) VALUES "
+	    				+ "(" + key + "'," + arr.get(1) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }

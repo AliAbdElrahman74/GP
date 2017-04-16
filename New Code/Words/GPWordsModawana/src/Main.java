@@ -11,7 +11,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import org.apache.commons.lang3.ArrayUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
@@ -37,7 +36,7 @@ public class Main {
 	}
 
 	public static String removeSamples(String string) {
-		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"';
+		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"' + ";";
 		String newString = "";
 		for (int i = 0; i < string.length(); i++) {
 			if (samples.indexOf(string.charAt(i)) == -1) {
@@ -49,10 +48,7 @@ public class Main {
 	
 	public static String[] removeSentence(String[] arr) throws UnsupportedEncodingException{
 		String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
-		String s = "سمير مُحمد احمَد. علُي عبدُ الرحٌمن. مُي احٌمد.";
-//	 String s = "سَمير مٌحمد احُمد حُسني عيُ عُبد الرُحمن";
 		String samples = ".؟!";
-//		String[] arr = s.split(" ");
 		ArrayList<String>newArr = new ArrayList<String>();
 		String newString="";
 		System.out.println(arr.length);
@@ -69,7 +65,7 @@ public class Main {
 				newString += arr[i]+" ";
 			}
 			else{
-				if(arr[i].length() == 1 && bool == true){
+				if(arr[i].length() == 1 && bool == true && newString.length() >1){
 					bool = true;
 				    newString = newString.substring(0, newString.length()-1);
 					newString+=arr[i]+" ";
@@ -93,10 +89,6 @@ public class Main {
 		}
 		
 		////////// OUTPUT/////////////////
-		System.out.println(newArr.size());
-		
-		for (int i = 0; i < newArr.size(); i++)
-			System.out.println(newArr.get(i));
 		String narr[]=newArr.toArray(new String[newArr.size()]);
 
 		return narr;
@@ -123,7 +115,7 @@ public class Main {
 			InvalidFormatException, SQLException {
 
 		String[] allwords;
-		String[] paths = {"10_.docx"};
+		String[] paths = {"2_amira.docx"};
 		System.out.println("Loading From Database");
 		Primary p = new Primary();
 		Secondary s = new Secondary();

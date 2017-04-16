@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class DBConnection {
 	private static String DBName = "gpcharactersmodwwana";
-	private static String Password = "20130133";
+	private static String Password = "20130163";
 	
 	private static Connection connection = null;
 
