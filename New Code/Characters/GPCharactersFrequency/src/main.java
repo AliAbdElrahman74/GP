@@ -40,55 +40,80 @@ public class main {
 		return newString;
 	}
 	
-	public static String[] removeSentence(String[] arr) throws UnsupportedEncodingException{
+	public static String[] removeSentence(String s)
+			throws UnsupportedEncodingException {
+//		System.out.println("fo2  "  +s.length());
 		String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
-		String samples = ".؟!";
-		ArrayList<String>newArr = new ArrayList<String>();
-		String newString="";
+		String[] arr = s.split(" ");
+		ArrayList<String> newArr = new ArrayList<String>();
+		String newString = "";
 		System.out.println(arr.length);
 		int cnt = 0;
+		String hroofElmad = "اوى";
 		Boolean bool = true;
-		
+		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		String hroofShamsya = "تثدذرزسشصضطظنل";
 		for (int i = 0; i < arr.length; i++) {
 			cnt = 0;
-			for (int j = 0; j < arr[i].length(); j++) {
-				
-				if (allTashkeel.indexOf(arr[i].charAt(j)) != -1) {cnt++;}
-			}
-			if (cnt != 0) {  //mt4kla
-				newString += arr[i]+" ";
-			}
-			else{
-				if(arr[i].length() == 1 && bool == true && newString.length() >1){
-					bool = true;
-				    newString = newString.substring(0, newString.length()-1);
-					newString+=arr[i]+" ";
+			for (int j = 0; j < arr[i].length() - 1; j++) {
+				// System.out.println("Char " + arr[i].charAt(j));
+				// System.out.println(i+" "+j);
+				if (((j == 0 || arr[i].charAt(j - 1) == ' ') && arr[i]
+						.charAt(j) == 'ا')) { // / alf f bdayet el klma
+					continue;
 				}
-				else{bool = false;}
+				if ((j != 0  && arr[i].charAt(j-1)!=' '&& arr[i].charAt(j) == 'ي')) { // /7arf el yaa2
+					continue;
+				}
+				if (hroofElmad.indexOf(arr[i].charAt(j)) != -1) { // 7roof el
+																	// mad
+					continue;
+				}
+				if (arr[i].charAt(j) == 'ل'
+						&& hroofShamsya.indexOf(arr[i].charAt(j + 1)) != -1) { // lam
+																				// shamsya
+					continue;
+				}
+				if (chars.indexOf(arr[i].charAt(j)) != -1
+						&& allTashkeel.indexOf(arr[i].charAt(j + 1)) == -1) {
+					cnt++;
+				}
+
+			}
+			if (cnt == 0) { // mt4kla
+			// System.out.println("mt4kla " + arr[i]);
+				newString += arr[i] + " ";
+			} else {
+				if (arr[i].length() == 1 && bool == true
+						&& newString.length() > 1) {
+					bool = true;
+					newString = newString.substring(0, newString.length() - 1);
+					newString += arr[i] + " ";
+				} else {
+					bool = false;
+				}
 			}
 			if (arr[i].indexOf('؟') != -1 || arr[i].indexOf('.') != -1
-					|| arr[i].indexOf('!') != -1) {				
-    			if(bool==true){
-//    				System.out.println("Old "+newArr.toString());
-//    				System.out.println("New "+newString);
-				String[] tmp = newString.split(" "); 
-				newArr.addAll(Arrays.asList(tmp));
-//				=  new ArrayList<String>(Arrays.asList(tmp));
-
+					|| arr[i].indexOf('!') != -1) {
+				if (bool == true) {
+					String[] tmp = newString.split(" ");
+					newArr.addAll(Arrays.asList(tmp));
 				}
-    			bool = true;
-    			newString="";
+				bool = true;
+				newString = "";
 
 			}
 		}
-		
-		////////// OUTPUT/////////////////
-		String narr[]=newArr.toArray(new String[newArr.size()]);
+		// //////// OUTPUT/////////////////
+//		System.out.println(newArr.size());
+		String[] output = new String[newArr.size()];
+		for (int i = 0; i < newArr.size(); i++) {
+			output[i] = newArr.get(i);
+		}
+		return output;
 
-		return narr;
-		
 	}
-
+	@SuppressWarnings("resource")
 	public static String[] readFile(String path) throws InvalidFormatException,
 			IOException {
 		FileInputStream fs;
@@ -99,11 +124,13 @@ public class main {
 		fs = new FileInputStream(path);
 		hdoc = new XWPFDocument(OPCPackage.open(fs));
 		extractor = new XWPFWordExtractor(hdoc);
-		poip = extractor.getText();
-		String[] splited = poip.split("\\s+");
+		poip = extractor.getText(); 
+		poip=poip.replaceAll("\\.", " \\. ");
+		poip.replaceAll("\\s+", " ");
+		String[] splited =removeSentence(poip);
 		return splited;
-
 	}
+
 	
 	public static void fun(int c) throws InvalidFormatException, IOException, SQLException{
 		int window = 3;
