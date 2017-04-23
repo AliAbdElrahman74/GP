@@ -20,13 +20,12 @@ public class Primary {
 			tableName = "primary_t" + (c - 'ا');
 		
 		String sql = "SELECT * FROM " + tableName + "; ";
-		System.out.println(sql);
 		PreparedStatement stmt;
 		stmt = con.prepareStatement(sql);
 		ResultSet rs = stmt.executeQuery();
 		
 		HashMap<String, ArrayList<String> > temp = new HashMap<>();
-
+		boolean check = false;
 		while (rs.next()) {
 			ArrayList<String>arr = new ArrayList<>();
 			String s = rs.getString(1);
@@ -36,11 +35,17 @@ public class Primary {
 			s = rs.getString(3);
 			arr.add(s);
 			s = "old";
+			check = true;
 			arr.add(s);
 			
 			temp.put(word, arr);
 			
 		}
+		if (!check) {
+			primaryLastId = 0;
+		}
+		
+		
 		rs.close();
 		stmt.close();
 		return temp;
@@ -66,7 +71,7 @@ public class Primary {
 	       states = arr.get(2);
 	       if(states.equals("new")){
 	    		sql = "INSERT INTO "+ tableName +"(`word`, `count`) VALUES "
-	    				+ "(" + key + "'," + arr.get(1) + ");";
+	    				+ "('" + key + "'," + arr.get(1) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }

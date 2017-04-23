@@ -15,6 +15,7 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.openxml4j.opc.OPCPackage;
 import org.apache.poi.xwpf.extractor.XWPFWordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
+import org.apache.xmlbeans.impl.xb.xsdschema.LengthDocument;
 
 public class Main {
 
@@ -53,7 +54,7 @@ public class Main {
 		String[] arr = s.split(" ");
 		ArrayList<String> newArr = new ArrayList<String>();
 		String newString = "";
-		System.out.println(arr.length);
+//		System.out.println(" len " +arr.length);
 		int cnt = 0;
 		String hroofElmad = "اوى";
 		Boolean bool = true;
@@ -87,7 +88,7 @@ public class Main {
 
 			}
 			if (cnt == 0) { // mt4kla
-			// System.out.println("mt4kla " + arr[i]);
+//			 System.out.println("mt4kla " + arr[i]);
 				newString += arr[i] + " ";
 			} else {
 				if (arr[i].length() == 1 && bool == true
@@ -134,6 +135,7 @@ public class Main {
 		poip=poip.replaceAll("\\.", " \\. ");
 		poip.replaceAll("\\s+", " ");
 		String[] splited =removeSentence(poip);
+		
 		return splited;
 	}
 
@@ -142,7 +144,7 @@ public class Main {
 			InvalidFormatException, SQLException {
 
 		String[] allwords;
-		String[] paths = {"2_amira.docx"};
+		String[] paths = {"1.docx"};
 		System.out.println("Loading From Database");
 		Primary p = new Primary();
 		Secondary s = new Secondary();
@@ -151,10 +153,11 @@ public class Main {
 			
 			HashMap<String, ArrayList<String>> primaryMap = p.selection(chars.charAt(c));
 			HashMap<String, ArrayList<String>> secondaryMap = s.selection(chars.charAt(c));
+			
 			int primaryLastIndex = ++p.primaryLastId, secondaryLastIndex = ++s.secondaryLastId;
 			for (int z = 0; z < paths.length; z++) {
 				allwords = readFile(paths[z]);
-				allwords = removeSentence(allwords);
+				
 				for (int i = 0; i < allwords.length; i++) {
 					String s1, s2, primaryId;
 					s1 = allwords[i];
@@ -163,7 +166,6 @@ public class Main {
 					s2 = removeTashkeel(s2);
 
 					// s1 kelma metshakela, s2 msh metshakedla
-					// System.out.println(s1 + s2);
 					if (s2.length() > 0 && s2.charAt(0) == chars.charAt(c)) {
 						ArrayList<String> primaryList = new ArrayList<>();
 						ArrayList<String> secondaryList = new ArrayList<>();
@@ -177,6 +179,7 @@ public class Main {
 
 							secondaryList.add("" + secondaryLastIndex);
 							secondaryList.add("" + primaryLastIndex);
+
 							secondaryList.add("1");
 							secondaryList.add("new");
 							secondaryMap.put(s1, secondaryList);
@@ -213,31 +216,14 @@ public class Main {
 
 				}
 			}
-//			 for (String key : primaryMap.keySet()) {
-//			 System.out.println(key);
-//			 ArrayList<String>arr = primaryMap.get(key);
-//			 for(int i = 0 ; i < arr.size() ; i ++)
-//			 System.out.print(arr.get(i) + " ");
-//			 System.out.println();
-//			 }
-//			 System.out.println();
-//			 for (String key : secondaryMap.keySet()) {
-//			 System.out.println(key);
-//			 ArrayList<String>arr = secondaryMap.get(key);
-//			 for(int i = 0 ; i < arr.size() ; i ++)
-//			 System.out.print(arr.get(i) + " ");
-//			 System.out.println();
-//			 }
-			
+		
 			System.out.println("Inserting in Database");
 			p.insertion(primaryMap, chars.charAt(c));
+			primaryMap = p.selection(chars.charAt(c));
 			s.insertion(secondaryMap, chars.charAt(c));
+			
 			System.out.println("Done"+"  "+chars.charAt(c)+"  "+c);
 		}
-//		while(true){
-//		Scanner o = new Scanner(System.in);
-//		String s = o.nextLine();
-//		System.out.println(removeSamples(s));
-//	}
+
 	}
 }
