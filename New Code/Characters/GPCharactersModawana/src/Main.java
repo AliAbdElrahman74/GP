@@ -36,7 +36,7 @@ public class Main {
 	}
 
 	public static String removeSamples(String string) {
-		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"' + ";";
+		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\;/،ـ][؟,.’|~}«»{-=×€ß,~„ø¥¢°" + '"';
 		String newString = "";
 		for (int i = 0; i < string.length(); i++) {
 			if (samples.indexOf(string.charAt(i)) == -1) {
@@ -57,7 +57,7 @@ public class Main {
 		int cnt = 0;
 		String hroofElmad = "اوى";
 		Boolean bool = true;
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 		String hroofShamsya = "تثدذرزسشصضطظنل";
 		for (int i = 0; i < arr.length; i++) {
 			cnt = 0;
@@ -144,7 +144,7 @@ public class Main {
 	    String[] allwords ;
 	    String[] paths = {"1.docx","2_amira.docx"};
 	    System.out.println("Loading From Database");
-	    String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 	    for (int cnt = 0 ; cnt<chars.length() ; cnt++){
 	    	
 	    	char c = chars.charAt(cnt);
@@ -157,7 +157,6 @@ public class Main {
 		    for (int z = 0 ; z < paths.length ; z++)
 		    {
 		    	allwords = readFile(paths[z]);
-				allwords = removeSentence(allwords);
 
 		    	for ( int i = 0 ; i < allwords.length ;i++)
 		    	{

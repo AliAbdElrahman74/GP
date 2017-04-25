@@ -30,7 +30,7 @@ public class main {
 	}
 
 	public static String removeSamples(String string) {
-		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\/،ـ][؟,.’|~}«»{-=" + '"';
+		String samples = "+_()*&^%$#@!><؛×÷‘|:\'\\;/،ـ][؟,.’|~}«»{-=×€ß,~„ø¥¢°" + '"';
 		String newString = "";
 		for (int i = 0; i < string.length(); i++) {
 			if (samples.indexOf(string.charAt(i)) == -1) {
@@ -51,7 +51,7 @@ public class main {
 		int cnt = 0;
 		String hroofElmad = "اوى";
 		Boolean bool = true;
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 		String hroofShamsya = "تثدذرزسشصضطظنل";
 		for (int i = 0; i < arr.length; i++) {
 			cnt = 0;
@@ -136,7 +136,7 @@ public class main {
 		int window = 3;
 		
 	    	String[] paths = {"ali1_5.docx"};
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+			   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 		String allTashkeel = new String("ًٌَُِّ~ٍْ".getBytes(), "UTF-8");
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
@@ -145,8 +145,8 @@ public class main {
 		for (int z = 0; z < paths.length; z++) {
 			//System.out.println("here");
 			String[] words = readFile(paths[z]);
+			
 			//System.out.println("here");
-			words = removeSentence(words);
 			for (int i = 0; i < (words.length) ; i++) {
 				words[i] = removeSamples(words[i]);
 				for(int j = 0; j < words[i].length() ; j ++){
@@ -228,7 +228,7 @@ public class main {
 	public static void main(String[] args) throws InvalidFormatException,
 			IOException, SQLException {
 		
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإچ";
+		   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 		for (int c = 0; c < chars.length(); c++) {
 			fun(c);
 		}

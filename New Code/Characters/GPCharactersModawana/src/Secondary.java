@@ -10,7 +10,7 @@ public class Secondary {
 	static int secondaryLastId;
 	public static HashMap<String, ArrayList<String> >  selection(char c) throws SQLException {
 		String tableName;
-		if(c == 'آ' || c == 'ء' || c == 'أ' || c == 'إ')
+		if(c == 'آ' || c == 'ء' || c == 'أ' || c == 'إ'|| c == 'ؤ' || c == 'ئ')
 			tableName = "secondary_t_" + (-1 * (c - 'ا'));
 		else
 			tableName = "secondary_t" + (c - 'ا');
@@ -49,7 +49,7 @@ public static void insertion(HashMap<String, ArrayList<String>> m,char c) throws
 		String states="",sql;
 		PreparedStatement stmt;
 		String tableName;
-		if(c == 'آ' || c == 'ء' || c == 'أ' || c == 'إ')
+		if(c == 'آ' || c == 'ء' || c == 'أ' || c == 'إ'|| c == 'ؤ' || c == 'ئ')
 			tableName = "secondary_t_" + (-1 * (c - 'ا'));
 		else
 			tableName = "secondary_t" + (c - 'ا');
