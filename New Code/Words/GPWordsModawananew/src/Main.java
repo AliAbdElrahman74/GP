@@ -144,7 +144,7 @@ public class Main {
 			InvalidFormatException, SQLException {
 
 		String[] allwords;
-		String[] paths = {"1.docx"};
+		String[] paths = {"2.docx"};
 		System.out.println("Loading From Database");
 		Primary p = new Primary();
 		Secondary s = new Secondary();

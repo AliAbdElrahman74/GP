@@ -77,7 +77,7 @@ public class Primary {
 	       }
 	       else if(states.equals("updated")){
 	    	   //System.out.println("update");
-	    	   updateCounter(tableName,temp[0], temp[1], arr.get(1));
+	    	   updateCounter(tableName,temp[0], temp[1], arr.get(0));
 	    	   //System.out.println("Here");
 	       }
  
@@ -88,10 +88,9 @@ public class Primary {
 	public static void updateCounter(String tableName, String word1, String word2, String counter)
 			throws SQLException {
 		PreparedStatement stmt;
- 
 		// update counter in primary
 		String sql = "Update " + tableName
-				+ " set count = " + counter + " where word1 = " + word1 + " and word2 = " + word2 + ";";
+				+ " set count = " + counter + " where word1 = '" + word1 + "' and word2 = '" + word2 + "';";
 		stmt = con.prepareStatement(sql);
 		stmt.executeUpdate();
  

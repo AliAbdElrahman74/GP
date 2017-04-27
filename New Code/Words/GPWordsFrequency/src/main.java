@@ -136,15 +136,14 @@ public class main {
 	public static void fun(int c) throws InvalidFormatException, IOException, SQLException{
 		int window = 3;
 		String s, word1, word2, s1_s2 = "";
-	    	String[] paths = {"samir1.docx"};
-		//String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
+	    String[] paths = {"2.docx"};
+		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
 		map = Primary.selection(chars.charAt(c));
 		System.out.println("Start Coding");
 		for (int z = 0; z < paths.length; z++) {
 			String[] words = readFile(paths[z]);
-			words = removeSentence(words);
 			for (int i = 0; i < (words.length) ; i++) {
 				String[] s1 = new String[window * 2];  // array of windows
 				s = words[i];
