@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2017 at 02:15 AM
+-- Generation Time: Apr 21, 2017 at 02:31 PM
 -- Server version: 5.1.50-community
 -- PHP Version: 5.5.12
 
@@ -48,20 +48,6 @@ CREATE TABLE IF NOT EXISTS `primary_t1` (
   `count` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t2`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t2` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -306,90 +292,6 @@ CREATE TABLE IF NOT EXISTS `primary_t19` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `primary_t20`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t20` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t21`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t21` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t22`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t22` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t23`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t23` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t24`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t24` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t25`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t25` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `primary_t26`
 --
 
@@ -492,20 +394,6 @@ CREATE TABLE IF NOT EXISTS `primary_t32` (
 --
 
 CREATE TABLE IF NOT EXISTS `primary_t33` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `ID` (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `primary_t34`
---
-
-CREATE TABLE IF NOT EXISTS `primary_t34` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
   `word` varchar(255) NOT NULL,
   `count` int(11) DEFAULT NULL,
@@ -620,22 +508,6 @@ CREATE TABLE IF NOT EXISTS `secondary_t0` (
 --
 
 CREATE TABLE IF NOT EXISTS `secondary_t1` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t2`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t2` (
   `s_id` int(11) NOT NULL AUTO_INCREMENT,
   `p_id` int(11) NOT NULL,
   `word` varchar(255) NOT NULL,
@@ -920,102 +792,6 @@ CREATE TABLE IF NOT EXISTS `secondary_t19` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `secondary_t20`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t20` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t21`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t21` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t22`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t22` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t23`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t23` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t24`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t24` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `secondary_t25`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t25` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `secondary_t26`
 --
 
@@ -1144,22 +920,6 @@ CREATE TABLE IF NOT EXISTS `secondary_t33` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `secondary_t34`
---
-
-CREATE TABLE IF NOT EXISTS `secondary_t34` (
-  `s_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_id` int(11) NOT NULL,
-  `word` varchar(255) NOT NULL,
-  `count` int(11) DEFAULT NULL,
-  PRIMARY KEY (`s_id`),
-  KEY `p_id` (`p_id`),
-  KEY `s_id` (`s_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `secondary_t35`
 --
 
@@ -1270,12 +1030,6 @@ ALTER TABLE `secondary_t1`
   ADD CONSTRAINT `secondary_t1_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t1` (`id`);
 
 --
--- Constraints for table `secondary_t2`
---
-ALTER TABLE `secondary_t2`
-  ADD CONSTRAINT `secondary_t2_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t2` (`ID`);
-
---
 -- Constraints for table `secondary_t3`
 --
 ALTER TABLE `secondary_t3`
@@ -1378,42 +1132,6 @@ ALTER TABLE `secondary_t19`
   ADD CONSTRAINT `secondary_t19_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t19` (`ID`);
 
 --
--- Constraints for table `secondary_t20`
---
-ALTER TABLE `secondary_t20`
-  ADD CONSTRAINT `secondary_t20_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t20` (`ID`);
-
---
--- Constraints for table `secondary_t21`
---
-ALTER TABLE `secondary_t21`
-  ADD CONSTRAINT `secondary_t21_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t21` (`ID`);
-
---
--- Constraints for table `secondary_t22`
---
-ALTER TABLE `secondary_t22`
-  ADD CONSTRAINT `secondary_t22_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t22` (`ID`);
-
---
--- Constraints for table `secondary_t23`
---
-ALTER TABLE `secondary_t23`
-  ADD CONSTRAINT `secondary_t23_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t23` (`ID`);
-
---
--- Constraints for table `secondary_t24`
---
-ALTER TABLE `secondary_t24`
-  ADD CONSTRAINT `secondary_t24_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t24` (`ID`);
-
---
--- Constraints for table `secondary_t25`
---
-ALTER TABLE `secondary_t25`
-  ADD CONSTRAINT `secondary_t25_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t25` (`ID`);
-
---
 -- Constraints for table `secondary_t26`
 --
 ALTER TABLE `secondary_t26`
@@ -1460,12 +1178,6 @@ ALTER TABLE `secondary_t32`
 --
 ALTER TABLE `secondary_t33`
   ADD CONSTRAINT `secondary_t33_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t33` (`ID`);
-
---
--- Constraints for table `secondary_t34`
---
-ALTER TABLE `secondary_t34`
-  ADD CONSTRAINT `secondary_t34_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t34` (`ID`);
 
 --
 -- Constraints for table `secondary_t35`
