@@ -143,7 +143,7 @@ public class Main {
 		 
 		
 	    String[] allwords ;
-	    String[] paths = {"1.docx"};
+	    String[] paths = {"1.docx", "2.docx"};
 	    System.out.println("Loading From Database");
 		   String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويآءأإىؤئةڤپچژڛڈڠڪںهٹڑګڻۋ";
 	    for (int cnt = 0 ; cnt<chars.length() ; cnt++){

@@ -144,7 +144,7 @@ public class Main {
 			InvalidFormatException, SQLException {
 
 		String[] allwords;
-		String[] paths = {"2.docx"};
+		String[] paths = {"1.docx", "2.docx"};
 		System.out.println("Loading From Database");
 		Primary p = new Primary();
 		Secondary s = new Secondary();
@@ -179,7 +179,6 @@ public class Main {
 
 							secondaryList.add("" + secondaryLastIndex);
 							secondaryList.add("" + primaryLastIndex);
-
 							secondaryList.add("1");
 							secondaryList.add("new");
 							secondaryMap.put(s1, secondaryList);

@@ -25,7 +25,7 @@ public class Primary {
 		ResultSet rs = stmt.executeQuery();
 		
 		HashMap<String, ArrayList<String> > temp = new HashMap<>();
-		boolean check = false;
+		primaryLastId = 0;
 		while (rs.next()) {
 			ArrayList<String>arr = new ArrayList<>();
 			String s = rs.getString(1);
@@ -35,16 +35,11 @@ public class Primary {
 			s = rs.getString(3);
 			arr.add(s);
 			s = "old";
-			check = true;
 			arr.add(s);
 			
 			temp.put(word, arr);
 			
 		}
-		if (!check) {
-			primaryLastId = 0;
-		}
-		
 		
 		rs.close();
 		stmt.close();
@@ -70,8 +65,8 @@ public class Primary {
 	       arr = m.get(key);
 	       states = arr.get(2);
 	       if(states.equals("new")){
-	    		sql = "INSERT INTO "+ tableName +"(`word`, `count`) VALUES "
-	    				+ "('" + key + "'," + arr.get(1) + ");";
+	    		sql = "INSERT INTO "+ tableName +"(`word`, `count`, `id`) VALUES "
+	    				+ "('" + key + "'," + arr.get(1) + " , " + arr.get(0) +");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }

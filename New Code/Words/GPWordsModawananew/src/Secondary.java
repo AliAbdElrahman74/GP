@@ -23,8 +23,7 @@ public class Secondary {
 		ResultSet rs = stmt.executeQuery();
 
 		HashMap<String, ArrayList<String> > temp = new HashMap<>();
-		boolean check = false;
-
+		secondaryLastId = 0;
 		while (rs.next()) {
 			ArrayList<String>arr = new ArrayList<>();
 			String s = rs.getString(1);
@@ -37,12 +36,8 @@ public class Secondary {
 			arr.add(s);
 			s = "old";
 			arr.add(s);
-			check = true;
 			
 			temp.put(word, arr);
-		}
-		if (!check) {
-			secondaryLastId = 0;
 		}
 		rs.close();
 		stmt.close();
@@ -61,13 +56,17 @@ public static void insertion(HashMap<String, ArrayList<String>> m,char c) throws
 			tableName = "secondary_t" + (c - 'ا');
 
 		ArrayList<String> arr = new ArrayList<String>();
-
+		
 		for (String key : m.keySet()) {
 	       arr = m.get(key);
+//	       System.out.print(key + ": ");
+//	       for(int i = 0 ; i < arr.size() ; i ++)
+//	    	   System.out.print(arr.get(i) + " ");
+//	       System.out.println();
 	       states = arr.get(3);
 	       if(states.equals("new")){
-	    		sql = "Insert into " + tableName + " (`word`,`count`,`p_id`) VALUES  ( '"
-						+ key + "'," + arr.get(2) + " , " +arr.get(1) + ");";
+	    		sql = "Insert into " + tableName + " (`word`,`count`,`p_id`,`s_id`) VALUES  ( '"
+						+ key + "'," + arr.get(2) + " , " +arr.get(1) + " , " + arr.get(0) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }

@@ -65,8 +65,8 @@ public static void insertion(HashMap<String, ArrayList<String>> m,char c) throws
 	       arr = m.get(key);
 	       states = arr.get(3);
 	       if(states.equals("new")){
-	    	   sql = "Insert into " + tableName + " (`word`,`count`,`p_id`) VALUES  ( '"
-						+ key + "'," + arr.get(2) + " , " +arr.get(1) + ");";
+	    	   sql = "Insert into " + tableName + " (`word`,`count`,`p_id`, `s_id`) VALUES  ( '"
+						+ key + "'," + arr.get(2) + " , " +arr.get(1) + " , " + arr.get(0) + ");";
 				stmt = con.prepareStatement(sql);
 				stmt.executeUpdate();
 	       }
