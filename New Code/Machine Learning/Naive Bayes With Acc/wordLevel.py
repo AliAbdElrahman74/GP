@@ -134,7 +134,7 @@ def fun(word1, word2):
 start_time = time.time()
 
 arr = []
-document = Document('i.docx')
+document = Document('input.docx')
 for para in document.paragraphs:
     words = para.text.split(' ')
     for word in words:
@@ -215,23 +215,21 @@ for i in range(len(arr)):
     result += removeSamples(allWords[index][0])
     result +=" "
 
-
-
 result = result.split(" ")
 
 # replace this with reading from doc file
 output = []
-document = Document('t.docx')
+document = Document('testing.docx')
 for para in document.paragraphs:
     words = para.text.split(' ')
     for word in words:
         word = removeSamples(word)
         if len(word) > 0:
             output.append(word)
-print output[0]
-print result[0]
+            
 print len(result)
 print len(output)
+
 elBeniaCounter = 0
 ele3rabCounter = 0
 for i in range(0, len(output)):
@@ -241,38 +239,43 @@ for i in range(0, len(output)):
     counter = 0
     #print len(output[i]), len(result[i])
     allTashkeel = unicode("ًٌَُِّ~ٍْ", "utf-8")
+    resultCounter = 0
     outputCounter = 0
     isBenia = True
     isErab = True
     resultWordWithoutTashkeel = removeTashkeel(result[i])
     
-    for resultCounter in range(0, len(result[i])):
+    while resultCounter < len(result[i]):
         resultChar = result[i][resultCounter]
         outputChar = output[i][outputCounter]
         
         tempResultCounter = resultCounter + 1
         while True:
+            if tempResultCounter >= len(result[i]):
+                break
             if allTashkeel.find(result[i][tempResultCounter]) == -1:
                 break
             resultChar += result[i][tempResultCounter]
             tempResultCounter = tempResultCounter + 1
         
-        tempOutputCounter = outputCounter
+        tempOutputCounter = outputCounter + 1
         while True:
+            if tempOutputCounter >= len(output[i]):
+                break
             if allTashkeel.find(output[i][tempOutputCounter]) == -1:
                 break
             outputChar += output[i][tempOutputCounter]
             tempOutputCounter = tempOutputCounter + 1
         
         counter += 1
-        
+
         if resultChar != outputChar:
             if counter <= len(resultWordWithoutTashkeel) - 1:
                 isBenia = False
             else:
                 isErab = False
         
-        resultCounter = tempResultCounter - 1
+        resultCounter = tempResultCounter
         outputCounter = tempOutputCounter
 
     
@@ -280,7 +283,6 @@ for i in range(0, len(output)):
         elBeniaCounter += 1
     if isErab :
         ele3rabCounter += 1
-    
     
 print ("El Benia Accuracy: ")    
 print (1.0 * elBeniaCounter / len(output)) * 100.0 
