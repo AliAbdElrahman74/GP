@@ -248,7 +248,7 @@ for i in range(0, len(output)):
     
     for resultCounter in range(0, len(result[i])):
         resultChar = result[i][resultCounter]
-        outputChar = output[i][resultCounter]
+        outputChar = output[i][outputCounter]
         
         tempResultCounter = resultCounter + 1
         while True:
