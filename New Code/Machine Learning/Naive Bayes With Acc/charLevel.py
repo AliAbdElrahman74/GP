@@ -14,14 +14,14 @@ class Database:
     def __init__(self):
         self.db1 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='20130133',
-                     db='gpcharactersmodwwana_samir',
+                     passwd='20130163',
+                     db='gpcharactersmodwwananew',
                      charset='UTF8',
                      use_unicode=True)
         self.db2 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='20130133',
-                     db='gpcharactersfrequency_samir',
+                     passwd='20130163',
+                     db='gpcharactersfrequencynew_2_2',
                      charset='UTF8',
                      use_unicode=True)
 
