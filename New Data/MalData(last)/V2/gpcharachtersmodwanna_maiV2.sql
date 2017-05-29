@@ -37,7 +37,7 @@ CREATE TABLE `primary_t0` (
 
 LOCK TABLES `primary_t0` WRITE;
 /*!40000 ALTER TABLE `primary_t0` DISABLE KEYS */;
-INSERT INTO `primary_t0` VALUES (1,'ا',212);
+INSERT INTO `primary_t0` VALUES (1,'ا',46);
 /*!40000 ALTER TABLE `primary_t0` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -63,7 +63,7 @@ CREATE TABLE `primary_t1` (
 
 LOCK TABLES `primary_t1` WRITE;
 /*!40000 ALTER TABLE `primary_t1` DISABLE KEYS */;
-INSERT INTO `primary_t1` VALUES (1,'ب',71839);
+INSERT INTO `primary_t1` VALUES (1,'ب',172273);
 /*!40000 ALTER TABLE `primary_t1` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `primary_t10` (
 
 LOCK TABLES `primary_t10` WRITE;
 /*!40000 ALTER TABLE `primary_t10` DISABLE KEYS */;
-INSERT INTO `primary_t10` VALUES (1,'ر',83264);
+INSERT INTO `primary_t10` VALUES (1,'ر',169161);
 /*!40000 ALTER TABLE `primary_t10` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -140,7 +140,7 @@ CREATE TABLE `primary_t11` (
 
 LOCK TABLES `primary_t11` WRITE;
 /*!40000 ALTER TABLE `primary_t11` DISABLE KEYS */;
-INSERT INTO `primary_t11` VALUES (1,'ز',13607);
+INSERT INTO `primary_t11` VALUES (1,'ز',25618);
 /*!40000 ALTER TABLE `primary_t11` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -216,7 +216,7 @@ CREATE TABLE `primary_t12` (
 
 LOCK TABLES `primary_t12` WRITE;
 /*!40000 ALTER TABLE `primary_t12` DISABLE KEYS */;
-INSERT INTO `primary_t12` VALUES (1,'س',26413);
+INSERT INTO `primary_t12` VALUES (1,'س',87115);
 /*!40000 ALTER TABLE `primary_t12` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,7 +292,7 @@ CREATE TABLE `primary_t13` (
 
 LOCK TABLES `primary_t13` WRITE;
 /*!40000 ALTER TABLE `primary_t13` DISABLE KEYS */;
-INSERT INTO `primary_t13` VALUES (1,'ش',14135);
+INSERT INTO `primary_t13` VALUES (1,'ش',27146);
 /*!40000 ALTER TABLE `primary_t13` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -369,7 +369,7 @@ CREATE TABLE `primary_t14` (
 
 LOCK TABLES `primary_t14` WRITE;
 /*!40000 ALTER TABLE `primary_t14` DISABLE KEYS */;
-INSERT INTO `primary_t14` VALUES (1,'ص',27661);
+INSERT INTO `primary_t14` VALUES (1,'ص',37278);
 /*!40000 ALTER TABLE `primary_t14` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -445,7 +445,7 @@ CREATE TABLE `primary_t15` (
 
 LOCK TABLES `primary_t15` WRITE;
 /*!40000 ALTER TABLE `primary_t15` DISABLE KEYS */;
-INSERT INTO `primary_t15` VALUES (1,'ض',10912);
+INSERT INTO `primary_t15` VALUES (1,'ض',17927);
 /*!40000 ALTER TABLE `primary_t15` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -471,7 +471,7 @@ CREATE TABLE `primary_t16` (
 
 LOCK TABLES `primary_t16` WRITE;
 /*!40000 ALTER TABLE `primary_t16` DISABLE KEYS */;
-INSERT INTO `primary_t16` VALUES (1,'ط',11609);
+INSERT INTO `primary_t16` VALUES (1,'ط',21922);
 /*!40000 ALTER TABLE `primary_t16` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -523,7 +523,7 @@ CREATE TABLE `primary_t17` (
 
 LOCK TABLES `primary_t17` WRITE;
 /*!40000 ALTER TABLE `primary_t17` DISABLE KEYS */;
-INSERT INTO `primary_t17` VALUES (1,'ظ',5236);
+INSERT INTO `primary_t17` VALUES (1,'ظ',6894);
 /*!40000 ALTER TABLE `primary_t17` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -549,7 +549,7 @@ CREATE TABLE `primary_t18` (
 
 LOCK TABLES `primary_t18` WRITE;
 /*!40000 ALTER TABLE `primary_t18` DISABLE KEYS */;
-INSERT INTO `primary_t18` VALUES (1,'ع',63041);
+INSERT INTO `primary_t18` VALUES (1,'ع',136484);
 /*!40000 ALTER TABLE `primary_t18` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -577,7 +577,7 @@ CREATE TABLE `primary_t19` (
 
 LOCK TABLES `primary_t19` WRITE;
 /*!40000 ALTER TABLE `primary_t19` DISABLE KEYS */;
-INSERT INTO `primary_t19` VALUES (1,'غ',13002);
+INSERT INTO `primary_t19` VALUES (1,'غ',17288);
 /*!40000 ALTER TABLE `primary_t19` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -603,7 +603,7 @@ CREATE TABLE `primary_t2` (
 
 LOCK TABLES `primary_t2` WRITE;
 /*!40000 ALTER TABLE `primary_t2` DISABLE KEYS */;
-INSERT INTO `primary_t2` VALUES (1,'ة',29455);
+INSERT INTO `primary_t2` VALUES (1,'ة',57772);
 /*!40000 ALTER TABLE `primary_t2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -629,7 +629,7 @@ CREATE TABLE `primary_t26` (
 
 LOCK TABLES `primary_t26` WRITE;
 /*!40000 ALTER TABLE `primary_t26` DISABLE KEYS */;
-INSERT INTO `primary_t26` VALUES (1,'ف',65480);
+INSERT INTO `primary_t26` VALUES (1,'ف',127639);
 /*!40000 ALTER TABLE `primary_t26` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -655,7 +655,7 @@ CREATE TABLE `primary_t27` (
 
 LOCK TABLES `primary_t27` WRITE;
 /*!40000 ALTER TABLE `primary_t27` DISABLE KEYS */;
-INSERT INTO `primary_t27` VALUES (1,'ق',55222);
+INSERT INTO `primary_t27` VALUES (1,'ق',92795);
 /*!40000 ALTER TABLE `primary_t27` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -681,7 +681,7 @@ CREATE TABLE `primary_t28` (
 
 LOCK TABLES `primary_t28` WRITE;
 /*!40000 ALTER TABLE `primary_t28` DISABLE KEYS */;
-INSERT INTO `primary_t28` VALUES (1,'ك',35859);
+INSERT INTO `primary_t28` VALUES (1,'ك',80261);
 /*!40000 ALTER TABLE `primary_t28` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -707,7 +707,7 @@ CREATE TABLE `primary_t29` (
 
 LOCK TABLES `primary_t29` WRITE;
 /*!40000 ALTER TABLE `primary_t29` DISABLE KEYS */;
-INSERT INTO `primary_t29` VALUES (1,'ل',192874);
+INSERT INTO `primary_t29` VALUES (1,'ل',358739);
 /*!40000 ALTER TABLE `primary_t29` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -733,7 +733,7 @@ CREATE TABLE `primary_t3` (
 
 LOCK TABLES `primary_t3` WRITE;
 /*!40000 ALTER TABLE `primary_t3` DISABLE KEYS */;
-INSERT INTO `primary_t3` VALUES (1,'ت',47146);
+INSERT INTO `primary_t3` VALUES (1,'ت',103333);
 /*!40000 ALTER TABLE `primary_t3` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -759,7 +759,7 @@ CREATE TABLE `primary_t30` (
 
 LOCK TABLES `primary_t30` WRITE;
 /*!40000 ALTER TABLE `primary_t30` DISABLE KEYS */;
-INSERT INTO `primary_t30` VALUES (1,'م',114813);
+INSERT INTO `primary_t30` VALUES (1,'م',245942);
 /*!40000 ALTER TABLE `primary_t30` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -785,7 +785,7 @@ CREATE TABLE `primary_t31` (
 
 LOCK TABLES `primary_t31` WRITE;
 /*!40000 ALTER TABLE `primary_t31` DISABLE KEYS */;
-INSERT INTO `primary_t31` VALUES (1,'ن',94382);
+INSERT INTO `primary_t31` VALUES (1,'ن',217814);
 /*!40000 ALTER TABLE `primary_t31` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -811,7 +811,7 @@ CREATE TABLE `primary_t32` (
 
 LOCK TABLES `primary_t32` WRITE;
 /*!40000 ALTER TABLE `primary_t32` DISABLE KEYS */;
-INSERT INTO `primary_t32` VALUES (1,'ه',220438);
+INSERT INTO `primary_t32` VALUES (1,'ه',369226);
 /*!40000 ALTER TABLE `primary_t32` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -837,7 +837,7 @@ CREATE TABLE `primary_t33` (
 
 LOCK TABLES `primary_t33` WRITE;
 /*!40000 ALTER TABLE `primary_t33` DISABLE KEYS */;
-INSERT INTO `primary_t33` VALUES (1,'و',118660);
+INSERT INTO `primary_t33` VALUES (1,'و',179664);
 /*!40000 ALTER TABLE `primary_t33` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -854,7 +854,7 @@ CREATE TABLE `primary_t34` (
   `count` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   KEY `ID` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -863,7 +863,7 @@ CREATE TABLE `primary_t34` (
 
 LOCK TABLES `primary_t34` WRITE;
 /*!40000 ALTER TABLE `primary_t34` DISABLE KEYS */;
-INSERT INTO `primary_t34` VALUES (1,'ى',4);
+INSERT INTO `primary_t34` VALUES (1,'ى',5),(2,'ى',5);
 /*!40000 ALTER TABLE `primary_t34` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -889,7 +889,7 @@ CREATE TABLE `primary_t35` (
 
 LOCK TABLES `primary_t35` WRITE;
 /*!40000 ALTER TABLE `primary_t35` DISABLE KEYS */;
-INSERT INTO `primary_t35` VALUES (1,'ي',72916);
+INSERT INTO `primary_t35` VALUES (1,'ي',133884);
 /*!40000 ALTER TABLE `primary_t35` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -915,7 +915,7 @@ CREATE TABLE `primary_t4` (
 
 LOCK TABLES `primary_t4` WRITE;
 /*!40000 ALTER TABLE `primary_t4` DISABLE KEYS */;
-INSERT INTO `primary_t4` VALUES (1,'ث',12993);
+INSERT INTO `primary_t4` VALUES (1,'ث',26044);
 /*!40000 ALTER TABLE `primary_t4` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -941,7 +941,7 @@ CREATE TABLE `primary_t5` (
 
 LOCK TABLES `primary_t5` WRITE;
 /*!40000 ALTER TABLE `primary_t5` DISABLE KEYS */;
-INSERT INTO `primary_t5` VALUES (1,'ج',26163);
+INSERT INTO `primary_t5` VALUES (1,'ج',49994);
 /*!40000 ALTER TABLE `primary_t5` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -967,7 +967,7 @@ CREATE TABLE `primary_t6` (
 
 LOCK TABLES `primary_t6` WRITE;
 /*!40000 ALTER TABLE `primary_t6` DISABLE KEYS */;
-INSERT INTO `primary_t6` VALUES (1,'ح',44939);
+INSERT INTO `primary_t6` VALUES (1,'ح',65418);
 /*!40000 ALTER TABLE `primary_t6` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -993,7 +993,7 @@ CREATE TABLE `primary_t7` (
 
 LOCK TABLES `primary_t7` WRITE;
 /*!40000 ALTER TABLE `primary_t7` DISABLE KEYS */;
-INSERT INTO `primary_t7` VALUES (1,'خ',15828);
+INSERT INTO `primary_t7` VALUES (1,'خ',36063);
 /*!40000 ALTER TABLE `primary_t7` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1019,7 +1019,7 @@ CREATE TABLE `primary_t8` (
 
 LOCK TABLES `primary_t8` WRITE;
 /*!40000 ALTER TABLE `primary_t8` DISABLE KEYS */;
-INSERT INTO `primary_t8` VALUES (1,'د',39989);
+INSERT INTO `primary_t8` VALUES (1,'د',98451);
 /*!40000 ALTER TABLE `primary_t8` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1096,7 +1096,7 @@ CREATE TABLE `primary_t9` (
 
 LOCK TABLES `primary_t9` WRITE;
 /*!40000 ALTER TABLE `primary_t9` DISABLE KEYS */;
-INSERT INTO `primary_t9` VALUES (1,'ذ',21418);
+INSERT INTO `primary_t9` VALUES (1,'ذ',32837);
 /*!40000 ALTER TABLE `primary_t9` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1173,7 +1173,7 @@ CREATE TABLE `primary_t_1` (
 
 LOCK TABLES `primary_t_1` WRITE;
 /*!40000 ALTER TABLE `primary_t_1` DISABLE KEYS */;
-INSERT INTO `primary_t_1` VALUES (1,'ئ',4997);
+INSERT INTO `primary_t_1` VALUES (1,'ئ',9888);
 /*!40000 ALTER TABLE `primary_t_1` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1199,7 +1199,7 @@ CREATE TABLE `primary_t_2` (
 
 LOCK TABLES `primary_t_2` WRITE;
 /*!40000 ALTER TABLE `primary_t_2` DISABLE KEYS */;
-INSERT INTO `primary_t_2` VALUES (1,'إ',14339);
+INSERT INTO `primary_t_2` VALUES (1,'إ',42193);
 /*!40000 ALTER TABLE `primary_t_2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1225,7 +1225,7 @@ CREATE TABLE `primary_t_3` (
 
 LOCK TABLES `primary_t_3` WRITE;
 /*!40000 ALTER TABLE `primary_t_3` DISABLE KEYS */;
-INSERT INTO `primary_t_3` VALUES (1,'ؤ',1024);
+INSERT INTO `primary_t_3` VALUES (1,'ؤ',2864);
 /*!40000 ALTER TABLE `primary_t_3` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1251,7 +1251,7 @@ CREATE TABLE `primary_t_4` (
 
 LOCK TABLES `primary_t_4` WRITE;
 /*!40000 ALTER TABLE `primary_t_4` DISABLE KEYS */;
-INSERT INTO `primary_t_4` VALUES (1,'أ',45807);
+INSERT INTO `primary_t_4` VALUES (1,'أ',107243);
 /*!40000 ALTER TABLE `primary_t_4` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1303,7 +1303,7 @@ CREATE TABLE `primary_t_6` (
 
 LOCK TABLES `primary_t_6` WRITE;
 /*!40000 ALTER TABLE `primary_t_6` DISABLE KEYS */;
-INSERT INTO `primary_t_6` VALUES (1,'ء',4770);
+INSERT INTO `primary_t_6` VALUES (1,'ء',10580);
 /*!40000 ALTER TABLE `primary_t_6` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1323,7 +1323,7 @@ CREATE TABLE `secondary_t0` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t0_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t0` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1332,7 +1332,7 @@ CREATE TABLE `secondary_t0` (
 
 LOCK TABLES `secondary_t0` WRITE;
 /*!40000 ALTER TABLE `secondary_t0` DISABLE KEYS */;
-INSERT INTO `secondary_t0` VALUES (1,1,'اً',14),(2,1,'اَ',128),(3,1,'اِ',2),(4,1,'اُ',68);
+INSERT INTO `secondary_t0` VALUES (1,1,'اْ',2),(2,1,'اَّ',1),(3,1,'اً',1),(4,1,'اَ',4),(5,1,'اِ',2),(6,1,'اَّ',1),(7,1,'اً',1),(8,1,'اَ',29),(9,1,'اِ',2),(10,1,'اُ',11);
 /*!40000 ALTER TABLE `secondary_t0` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1361,7 +1361,7 @@ CREATE TABLE `secondary_t1` (
 
 LOCK TABLES `secondary_t1` WRITE;
 /*!40000 ALTER TABLE `secondary_t1` DISABLE KEYS */;
-INSERT INTO `secondary_t1` VALUES (1,1,'بِ',30919),(2,1,'بَ',17273),(3,1,'بَّ',779),(4,1,'بُ',9474),(5,1,'بْ',10898),(6,1,'بُّ',399),(7,1,'بٌ',405),(8,1,'بٍ',785),(9,1,'بً',478),(10,1,'بِّ',389),(11,1,'بٌّ',18),(12,1,'بًّ',17),(13,1,'بٍّ',5);
+INSERT INTO `secondary_t1` VALUES (1,1,'بً',1150),(2,1,'بٌ',1058),(3,1,'بٍ',1924),(4,1,'بَ',57295),(5,1,'بُ',16111),(6,1,'بِ',52492),(7,1,'بْ',38213),(8,1,'بِّ',636),(9,1,'بُّ',638),(10,1,'بَّ',2658),(11,1,'بٍّ',13),(12,1,'بٌّ',39),(13,1,'بًّ',46);
 /*!40000 ALTER TABLE `secondary_t1` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1382,7 +1382,7 @@ CREATE TABLE `secondary_t10` (
   KEY `s_id` (`s_id`),
   KEY `s_id_2` (`s_id`),
   CONSTRAINT `secondary_t10_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t10` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1391,7 +1391,7 @@ CREATE TABLE `secondary_t10` (
 
 LOCK TABLES `secondary_t10` WRITE;
 /*!40000 ALTER TABLE `secondary_t10` DISABLE KEYS */;
-INSERT INTO `secondary_t10` VALUES (1,1,'رَ',26711),(2,1,'رِّ',3705),(3,1,'رْ',9283),(4,1,'رِ',21188),(5,1,'رٍ',2044),(6,1,'رً',817),(7,1,'رَّ',4382),(8,1,'رُ',13231),(9,1,'رٌ',1005),(10,1,'رٍّ',59),(11,1,'رُّ',713),(12,1,'رٌّ',56),(13,1,'رًّ',70);
+INSERT INTO `secondary_t10` VALUES (1,1,'رّ',1),(2,1,'رْ',19142),(3,1,'رِّ',2323),(4,1,'رًّ',184),(5,1,'رٌّ',76),(6,1,'رٍّ',114),(7,1,'رَّ',7485),(8,1,'رُّ',2122),(9,1,'رً',2891),(10,1,'رٌ',2906),(11,1,'رٍ',5709),(12,1,'رَ',72206),(13,1,'رُ',22207),(14,1,'رِ',31794),(15,1,'رّْ',1),(16,1,'رّْ',1);
 /*!40000 ALTER TABLE `secondary_t10` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1448,7 +1448,7 @@ CREATE TABLE `secondary_t11` (
 
 LOCK TABLES `secondary_t11` WRITE;
 /*!40000 ALTER TABLE `secondary_t11` DISABLE KEYS */;
-INSERT INTO `secondary_t11` VALUES (1,1,'زَ',6172),(2,1,'زُ',1259),(3,1,'زِ',3687),(4,1,'زِّ',197),(5,1,'زَّ',1369),(6,1,'زْ',654),(7,1,'زٌّ',1),(8,1,'زُّ',110),(9,1,'زٍ',62),(10,1,'زً',39),(11,1,'زٌ',54),(12,1,'زًّ',1),(13,1,'زٍّ',2);
+INSERT INTO `secondary_t11` VALUES (1,1,'زْ',2311),(2,1,'زُّ',939),(3,1,'زِّ',591),(4,1,'زًّ',5),(5,1,'زٌّ',4),(6,1,'زٍّ',21),(7,1,'زَّ',1231),(8,1,'زً',45),(9,1,'زٌ',67),(10,1,'زٍ',115),(11,1,'زَ',11200),(12,1,'زُ',2197),(13,1,'زِ',6892);
 /*!40000 ALTER TABLE `secondary_t11` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1524,7 +1524,7 @@ CREATE TABLE `secondary_t12` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t12_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t12` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1533,7 +1533,7 @@ CREATE TABLE `secondary_t12` (
 
 LOCK TABLES `secondary_t12` WRITE;
 /*!40000 ALTER TABLE `secondary_t12` DISABLE KEYS */;
-INSERT INTO `secondary_t12` VALUES (1,1,'سَّ',1821),(2,1,'سَ',9169),(3,1,'سْ',8466),(4,1,'سُ',2077),(5,1,'سِ',3056),(6,1,'سِّ',318),(7,1,'سُّ',442),(8,1,'سٍ',801),(9,1,'سٌ',126),(10,1,'سً',134),(11,1,'سٌّ',2),(12,1,'سًّ',1);
+INSERT INTO `secondary_t12` VALUES (1,1,'سًّ',6),(2,1,'سَّ',5108),(3,1,'سً',445),(4,1,'سُّ',1304),(5,1,'سٌ',656),(6,1,'سِّ',894),(7,1,'سٍ',1795),(8,1,'سَ',36859),(9,1,'سُ',8943),(10,1,'سِ',11616),(11,1,'سْ',19489);
 /*!40000 ALTER TABLE `secondary_t12` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1609,7 +1609,7 @@ CREATE TABLE `secondary_t13` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t13_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t13` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1618,7 +1618,7 @@ CREATE TABLE `secondary_t13` (
 
 LOCK TABLES `secondary_t13` WRITE;
 /*!40000 ALTER TABLE `secondary_t13` DISABLE KEYS */;
-INSERT INTO `secondary_t13` VALUES (1,1,'شَ',4705),(2,1,'شْ',2722),(3,1,'شُ',614),(4,1,'شِ',1366),(5,1,'شَّ',4046),(6,1,'شِّ',266),(7,1,'شً',28),(8,1,'شُّ',289),(9,1,'شٍ',75),(10,1,'شٌ',23),(11,1,'شٌّ',1);
+INSERT INTO `secondary_t13` VALUES (1,1,'شًّ',2),(2,1,'شً',301),(3,1,'شٌ',226),(4,1,'شٍّ',7),(5,1,'شَّ',3511),(6,1,'شٍ',496),(7,1,'شَ',11407),(8,1,'شُّ',336),(9,1,'شُ',1461),(10,1,'شِّ',426),(11,1,'شِ',3068),(12,1,'شْ',5905);
 /*!40000 ALTER TABLE `secondary_t13` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1703,7 +1703,7 @@ CREATE TABLE `secondary_t14` (
 
 LOCK TABLES `secondary_t14` WRITE;
 /*!40000 ALTER TABLE `secondary_t14` DISABLE KEYS */;
-INSERT INTO `secondary_t14` VALUES (1,1,'صَّ',5377),(2,1,'صِ',3831),(3,1,'صْ',4641),(4,1,'صَ',11013),(5,1,'صِّ',407),(6,1,'صُ',1595),(7,1,'صٍ',82),(8,1,'صُّ',535),(9,1,'صٌ',35),(10,1,'صً',72),(11,1,'صٍّ',9),(12,1,'صٌّ',30),(13,1,'صّ',6),(14,1,'صًّ',28);
+INSERT INTO `secondary_t14` VALUES (1,1,'صً',77),(2,1,'صٌ',57),(3,1,'صًّ',18),(4,1,'صٍ',155),(5,1,'صٌّ',23),(6,1,'صَ',16484),(7,1,'صُ',2301),(8,1,'صَّ',3287),(9,1,'صِ',4608),(10,1,'صُّ',631),(11,1,'صِّ',504),(12,1,'صْ',9127),(13,1,'صٍّ',1),(14,1,'صٍّ',6);
 /*!40000 ALTER TABLE `secondary_t14` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1779,7 +1779,7 @@ CREATE TABLE `secondary_t15` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t15_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t15` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1788,7 +1788,7 @@ CREATE TABLE `secondary_t15` (
 
 LOCK TABLES `secondary_t15` WRITE;
 /*!40000 ALTER TABLE `secondary_t15` DISABLE KEYS */;
-INSERT INTO `secondary_t15` VALUES (1,1,'ضَ',3322),(2,1,'ضِ',4000),(3,1,'ضِّ',50),(4,1,'ضُ',1044),(5,1,'ضَّ',451),(6,1,'ضً',720),(7,1,'ضٌ',108),(8,1,'ضٍ',242),(9,1,'ضْ',955),(10,1,'ضًّ',2),(11,1,'ضُّ',18);
+INSERT INTO `secondary_t15` VALUES (1,1,'ضً',898),(2,1,'ضٌ',133),(3,1,'ضٍ',363),(4,1,'ضَ',7640),(5,1,'ضُ',2287),(6,1,'ضِ',4208),(7,1,'ضَّ',681),(8,1,'ضْ',1545),(9,1,'ضُّ',91),(10,1,'ضِّ',80),(11,1,'ضٌّ',1),(12,1,'ضٌّ',1);
 /*!40000 ALTER TABLE `secondary_t15` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1808,7 +1808,7 @@ CREATE TABLE `secondary_t16` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t16_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t16` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1817,7 +1817,7 @@ CREATE TABLE `secondary_t16` (
 
 LOCK TABLES `secondary_t16` WRITE;
 /*!40000 ALTER TABLE `secondary_t16` DISABLE KEYS */;
-INSERT INTO `secondary_t16` VALUES (1,1,'طِ',1469),(2,1,'طَ',3952),(3,1,'طْ',3157),(4,1,'طِّ',140),(5,1,'طُ',1139),(6,1,'طُّ',86),(7,1,'طَّ',1379),(8,1,'طٌ',78),(9,1,'طٍ',131),(10,1,'طً',78);
+INSERT INTO `secondary_t16` VALUES (1,1,'طً',135),(2,1,'طٌ',91),(3,1,'طٍ',292),(4,1,'طَ',10936),(5,1,'طُ',1929),(6,1,'طِ',2824),(7,1,'طًّ',3),(8,1,'طْ',2983),(9,1,'طَّ',2217),(10,1,'طُّ',266),(11,1,'طِّ',245),(12,1,'طٍّ',1),(13,1,'طٍّ',1);
 /*!40000 ALTER TABLE `secondary_t16` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1865,7 +1865,7 @@ CREATE TABLE `secondary_t17` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t17_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t17` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1874,7 +1874,7 @@ CREATE TABLE `secondary_t17` (
 
 LOCK TABLES `secondary_t17` WRITE;
 /*!40000 ALTER TABLE `secondary_t17` DISABLE KEYS */;
-INSERT INTO `secondary_t17` VALUES (1,1,'ظَّ',216),(2,1,'ظِ',634),(3,1,'ظَ',2443),(4,1,'ظُ',407),(5,1,'ظُّ',99),(6,1,'ظْ',1321),(7,1,'ظٍ',37),(8,1,'ظِّ',59),(9,1,'ظٌ',6),(10,1,'ظٌّ',4),(11,1,'ظً',10);
+INSERT INTO `secondary_t17` VALUES (1,1,'ظً',33),(2,1,'ظٌ',11),(3,1,'ظٍ',28),(4,1,'ظَ',3384),(5,1,'ظُ',1071),(6,1,'ظِ',884),(7,1,'ظْ',907),(8,1,'ظًّ',9),(9,1,'ظٌّ',2),(10,1,'ظَّ',341),(11,1,'ظُّ',152),(12,1,'ظِّ',72);
 /*!40000 ALTER TABLE `secondary_t17` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1894,7 +1894,7 @@ CREATE TABLE `secondary_t18` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t18_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t18` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1903,7 +1903,7 @@ CREATE TABLE `secondary_t18` (
 
 LOCK TABLES `secondary_t18` WRITE;
 /*!40000 ALTER TABLE `secondary_t18` DISABLE KEYS */;
-INSERT INTO `secondary_t18` VALUES (1,1,'عْ',7323),(2,1,'عَ',38398),(3,1,'عً',619),(4,1,'عِ',10848),(5,1,'عُ',4558),(6,1,'عٌ',490),(7,1,'عٍ',752),(8,1,'عَّ',48),(9,1,'عُّ',2),(10,1,'عِّ',3);
+INSERT INTO `secondary_t18` VALUES (1,1,'عِّ',13),(2,1,'عً',1127),(3,1,'عٌ',796),(4,1,'عٍ',1359),(5,1,'عَ',87955),(6,1,'عُ',12853),(7,1,'عِ',14432),(8,1,'عْ',17874),(9,1,'عَّ',69),(10,1,'عُّ',4),(11,1,'عُّ',6);
 /*!40000 ALTER TABLE `secondary_t18` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1923,7 +1923,7 @@ CREATE TABLE `secondary_t19` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t19_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t19` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1932,7 +1932,7 @@ CREATE TABLE `secondary_t19` (
 
 LOCK TABLES `secondary_t19` WRITE;
 /*!40000 ALTER TABLE `secondary_t19` DISABLE KEYS */;
-INSERT INTO `secondary_t19` VALUES (1,1,'غُ',570),(2,1,'غْ',2474),(3,1,'غَ',8183),(4,1,'غِ',1733),(5,1,'غِّ',1),(6,1,'غً',20),(7,1,'غٍ',9),(8,1,'غٌ',11),(9,1,'غَّ',1);
+INSERT INTO `secondary_t19` VALUES (1,1,'غً',19),(2,1,'غِّ',13),(3,1,'غٌ',19),(4,1,'غٍ',35),(5,1,'غَ',10799),(6,1,'غُ',1381),(7,1,'غِ',1435),(8,1,'غْ',3560),(9,1,'غَّ',25),(10,1,'غُّ',2),(11,1,'غُّ',2);
 /*!40000 ALTER TABLE `secondary_t19` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1952,7 +1952,7 @@ CREATE TABLE `secondary_t2` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t2_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t2` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1961,7 +1961,7 @@ CREATE TABLE `secondary_t2` (
 
 LOCK TABLES `secondary_t2` WRITE;
 /*!40000 ALTER TABLE `secondary_t2` DISABLE KEYS */;
-INSERT INTO `secondary_t2` VALUES (1,1,'ةِ',13449),(2,1,'ةٍ',2491),(3,1,'ةَ',3377),(4,1,'ةٌ',2945),(5,1,'ةُ',5008),(6,1,'ةً',2185);
+INSERT INTO `secondary_t2` VALUES (1,1,'ةً',4997),(2,1,'ةٌ',3788),(3,1,'ةٍ',4415),(4,1,'ةَ',15499),(5,1,'ةُ',7912),(6,1,'ةِ',21160),(7,1,'ةْ',1);
 /*!40000 ALTER TABLE `secondary_t2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1990,7 +1990,7 @@ CREATE TABLE `secondary_t26` (
 
 LOCK TABLES `secondary_t26` WRITE;
 /*!40000 ALTER TABLE `secondary_t26` DISABLE KEYS */;
-INSERT INTO `secondary_t26` VALUES (1,1,'فِ',30914),(2,1,'فَ',21986),(3,1,'فْ',3589),(4,1,'فُ',7126),(5,1,'فٌ',280),(6,1,'فَّ',576),(7,1,'فِّ',175),(8,1,'فً',387),(9,1,'فًّ',10),(10,1,'فٍ',366),(11,1,'فُّ',56),(12,1,'فٍّ',11),(13,1,'فٌّ',4);
+INSERT INTO `secondary_t26` VALUES (1,1,'فًّ',16),(2,1,'فٌّ',15),(3,1,'فٍّ',21),(4,1,'فَّ',1275),(5,1,'فُّ',163),(6,1,'فً',774),(7,1,'فٌ',446),(8,1,'فٍ',938),(9,1,'فَ',78579),(10,1,'فُ',5929),(11,1,'فِ',32471),(12,1,'فْ',5760),(13,1,'فِّ',1252);
 /*!40000 ALTER TABLE `secondary_t26` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2010,7 +2010,7 @@ CREATE TABLE `secondary_t27` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t27_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t27` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2019,7 +2019,7 @@ CREATE TABLE `secondary_t27` (
 
 LOCK TABLES `secondary_t27` WRITE;
 /*!40000 ALTER TABLE `secondary_t27` DISABLE KEYS */;
-INSERT INTO `secondary_t27` VALUES (1,1,'قَ',35545),(2,1,'قِ',9210),(3,1,'قُ',3700),(4,1,'قْ',4383),(5,1,'قً',620),(6,1,'قَّ',407),(7,1,'قِّ',328),(8,1,'قٌ',316),(9,1,'قٍ',232),(10,1,'قُّ',341),(11,1,'قًّ',36),(12,1,'قٌّ',69),(13,1,'قٍّ',34),(14,1,'قّ',1);
+INSERT INTO `secondary_t27` VALUES (1,1,'قًّ',49),(2,1,'قٌّ',62),(3,1,'قٍّ',57),(4,1,'قَّ',921),(5,1,'قً',607),(6,1,'قٌ',609),(7,1,'قٍ',540),(8,1,'قَ',58008),(9,1,'قُ',10338),(10,1,'قِ',13444),(11,1,'قْ',7482),(12,1,'قُّ',254),(13,1,'قِّ',424);
 /*!40000 ALTER TABLE `secondary_t27` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2048,7 +2048,7 @@ CREATE TABLE `secondary_t28` (
 
 LOCK TABLES `secondary_t28` WRITE;
 /*!40000 ALTER TABLE `secondary_t28` DISABLE KEYS */;
-INSERT INTO `secondary_t28` VALUES (1,1,'كِ',3885),(2,1,'كُ',5162),(3,1,'كَ',21453),(4,1,'كْ',4459),(5,1,'كٍ',120),(6,1,'كً',93),(7,1,'كٌ',111),(8,1,'كَّ',336),(9,1,'كِّ',182),(10,1,'كُّ',45),(11,1,'كٌّ',2),(12,1,'كًّ',6),(13,1,'كٍّ',5);
+INSERT INTO `secondary_t28` VALUES (1,1,'كًّ',9),(2,1,'كٌّ',8),(3,1,'كٍّ',20),(4,1,'كً',181),(5,1,'كٌ',213),(6,1,'كٍ',377),(7,1,'كَ',47717),(8,1,'كُ',12699),(9,1,'كِ',8928),(10,1,'كْ',8554),(11,1,'كَّ',1083),(12,1,'كُّ',78),(13,1,'كِّ',394);
 /*!40000 ALTER TABLE `secondary_t28` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2077,7 +2077,7 @@ CREATE TABLE `secondary_t29` (
 
 LOCK TABLES `secondary_t29` WRITE;
 /*!40000 ALTER TABLE `secondary_t29` DISABLE KEYS */;
-INSERT INTO `secondary_t29` VALUES (1,1,'لَ',69990),(2,1,'لَّ',9428),(3,1,'لْ',72772),(4,1,'لِ',25429),(5,1,'لُ',9226),(6,1,'لِّ',1539),(7,1,'لٍ',1568),(8,1,'لً',830),(9,1,'لٌ',925),(10,1,'لُّ',1037),(11,1,'لٌّ',32),(12,1,'لٍّ',54),(13,1,'لًّ',41),(14,1,'لّ',3);
+INSERT INTO `secondary_t29` VALUES (1,1,'لًّ',47),(2,1,'لً',2590),(3,1,'لٌّ',52),(4,1,'لٌ',1700),(5,1,'لٍ',2670),(6,1,'لَ',151661),(7,1,'لُ',19032),(8,1,'لِ',51379),(9,1,'لْ',99278),(10,1,'لٍّ',72),(11,1,'لَّ',26284),(12,1,'لُّ',1318),(13,1,'لِّ',2653),(14,1,'لّ',3);
 /*!40000 ALTER TABLE `secondary_t29` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2106,7 +2106,7 @@ CREATE TABLE `secondary_t3` (
 
 LOCK TABLES `secondary_t3` WRITE;
 /*!40000 ALTER TABLE `secondary_t3` DISABLE KEYS */;
-INSERT INTO `secondary_t3` VALUES (1,1,'تَ',26693),(2,1,'تَّ',4288),(3,1,'تُّ',108),(4,1,'تِ',7723),(5,1,'تُ',3847),(6,1,'تِّ',350),(7,1,'تْ',3662),(8,1,'تٌ',126),(9,1,'تٍ',255),(10,1,'تً',75),(11,1,'تٍّ',7),(12,1,'تٌّ',6),(13,1,'تّ',2),(14,1,'تًّ',4);
+INSERT INTO `secondary_t3` VALUES (1,1,'تً',199),(2,1,'تٌ',252),(3,1,'تٍ',628),(4,1,'تَ',52608),(5,1,'تُ',13165),(6,1,'تِ',15999),(7,1,'تْ',12343),(8,1,'تَّ',6635),(9,1,'تٍّ',150),(10,1,'تٌّ',12),(11,1,'تًّ',26),(12,1,'تِّ',691),(13,1,'تُّ',624),(14,1,'تّ',1);
 /*!40000 ALTER TABLE `secondary_t3` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2135,7 +2135,7 @@ CREATE TABLE `secondary_t30` (
 
 LOCK TABLES `secondary_t30` WRITE;
 /*!40000 ALTER TABLE `secondary_t30` DISABLE KEYS */;
-INSERT INTO `secondary_t30` VALUES (1,1,'مُ',24242),(2,1,'مْ',12685),(3,1,'مَّ',3616),(4,1,'مَ',50122),(5,1,'مِ',20925),(6,1,'مٍ',1033),(7,1,'مٌ',728),(8,1,'مِّ',451),(9,1,'مُّ',348),(10,1,'مً',603),(11,1,'مٌّ',23),(12,1,'مٍّ',23),(13,1,'مًّ',14);
+INSERT INTO `secondary_t30` VALUES (1,1,'مً',1929),(2,1,'مٌ',1520),(3,1,'مًّ',52),(4,1,'مٍ',3023),(5,1,'مَ',94197),(6,1,'مُ',37340),(7,1,'مِ',46610),(8,1,'مْ',41171),(9,1,'مٌّ',22),(10,1,'مٍّ',54),(11,1,'مَّ',17991),(12,1,'مُّ',914),(13,1,'مِّ',1119);
 /*!40000 ALTER TABLE `secondary_t30` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2164,7 +2164,7 @@ CREATE TABLE `secondary_t31` (
 
 LOCK TABLES `secondary_t31` WRITE;
 /*!40000 ALTER TABLE `secondary_t31` DISABLE KEYS */;
-INSERT INTO `secondary_t31` VALUES (1,1,'نَّ',12490),(2,1,'نَ',23790),(3,1,'نْ',28799),(4,1,'نٍ',977),(5,1,'نُّ',306),(6,1,'نِّ',2506),(7,1,'نِ',18013),(8,1,'نُ',6627),(9,1,'نً',468),(10,1,'نٌ',378),(11,1,'نًّ',16),(12,1,'نٍّ',10),(13,1,'نٌّ',2);
+INSERT INTO `secondary_t31` VALUES (1,1,'نً',831),(2,1,'نٌ',569),(3,1,'نٍ',1308),(4,1,'نَ',80909),(5,1,'نُ',21022),(6,1,'نِ',33319),(7,1,'نْ',53728),(8,1,'نًّ',41),(9,1,'نٌّ',8),(10,1,'نٍّ',15),(11,1,'نَّ',22557),(12,1,'نُّ',1032),(13,1,'نِّ',2475);
 /*!40000 ALTER TABLE `secondary_t31` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2193,7 +2193,7 @@ CREATE TABLE `secondary_t32` (
 
 LOCK TABLES `secondary_t32` WRITE;
 /*!40000 ALTER TABLE `secondary_t32` DISABLE KEYS */;
-INSERT INTO `secondary_t32` VALUES (1,1,'هُ',97730),(2,1,'هِ',67346),(3,1,'هْ',4014),(4,1,'هَ',49318),(5,1,'هٍ',268),(6,1,'هٌ',1096),(7,1,'هَّ',214),(8,1,'هً',318),(9,1,'هُّ',64),(10,1,'هِّ',68),(11,1,'هٍّ',2);
+INSERT INTO `secondary_t32` VALUES (1,1,'هً',292),(2,1,'هٌ',410),(3,1,'هٍ',308),(4,1,'هَ',79370),(5,1,'هُ',159768),(6,1,'هِ',109672),(7,1,'هْ',18364),(8,1,'هَّ',754),(9,1,'هُّ',116),(10,1,'هِّ',170),(11,1,'هٍّ',2);
 /*!40000 ALTER TABLE `secondary_t32` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2222,7 +2222,7 @@ CREATE TABLE `secondary_t33` (
 
 LOCK TABLES `secondary_t33` WRITE;
 /*!40000 ALTER TABLE `secondary_t33` DISABLE KEYS */;
-INSERT INTO `secondary_t33` VALUES (1,1,'وْ',15468),(2,1,'وَ',97017),(3,1,'وَّ',1102),(4,1,'وُ',1331),(5,1,'وِّ',497),(6,1,'وِ',2986),(7,1,'وٌ',47),(8,1,'وً',39),(9,1,'وٌّ',14),(10,1,'وُّ',115),(11,1,'وٍّ',5),(12,1,'وٍ',34),(13,1,'وًّ',5);
+INSERT INTO `secondary_t33` VALUES (1,1,'وً',93),(2,1,'وٌ',39),(3,1,'وٍ',45),(4,1,'وَ',148579),(5,1,'وُ',2815),(6,1,'وِ',4219),(7,1,'وْ',20381),(8,1,'وًّ',30),(9,1,'وٌّ',22),(10,1,'وٍّ',17),(11,1,'وَّ',2756),(12,1,'وُّ',184),(13,1,'وِّ',484);
 /*!40000 ALTER TABLE `secondary_t33` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2242,7 +2242,7 @@ CREATE TABLE `secondary_t34` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t34_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t34` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2251,7 +2251,7 @@ CREATE TABLE `secondary_t34` (
 
 LOCK TABLES `secondary_t34` WRITE;
 /*!40000 ALTER TABLE `secondary_t34` DISABLE KEYS */;
-INSERT INTO `secondary_t34` VALUES (1,1,'ىُّ',2),(2,1,'ىِ',1),(3,1,'ىٍّ',1);
+INSERT INTO `secondary_t34` VALUES (1,1,'ىً',2),(2,1,'ىَ',1),(3,1,'ىِ',1),(4,1,'ىْ',1),(5,1,'ىً',2),(6,1,'ىَ',1),(7,1,'ىِ',1),(8,1,'ىْ',1);
 /*!40000 ALTER TABLE `secondary_t34` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2271,7 +2271,7 @@ CREATE TABLE `secondary_t35` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t35_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t35` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2280,7 +2280,7 @@ CREATE TABLE `secondary_t35` (
 
 LOCK TABLES `secondary_t35` WRITE;
 /*!40000 ALTER TABLE `secondary_t35` DISABLE KEYS */;
-INSERT INTO `secondary_t35` VALUES (1,1,'يَ',29592),(2,1,'يْ',24613),(3,1,'يَّ',2770),(4,1,'يً',137),(5,1,'يُ',7661),(6,1,'يِّ',3017),(7,1,'يُّ',3781),(8,1,'يٍّ',282),(9,1,'يٌّ',256),(10,1,'يًّ',187),(11,1,'يّ',34),(12,1,'يِ',533),(13,1,'يٍ',27),(14,1,'يِّ',1),(15,1,'يٌ',25);
+INSERT INTO `secondary_t35` VALUES (1,1,'يً',366),(2,1,'يٌ',56),(3,1,'يٍ',52),(4,1,'يَ',48669),(5,1,'يُ',12258),(6,1,'يِ',1179),(7,1,'يْ',48575),(8,1,'يُّ',5607),(9,1,'يِّ',5318),(10,1,'يًّ',524),(11,1,'يٌّ',980),(12,1,'يٍّ',1449),(13,1,'يَّ',8845),(14,1,'يّ',6);
 /*!40000 ALTER TABLE `secondary_t35` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2300,7 +2300,7 @@ CREATE TABLE `secondary_t4` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t4_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t4` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2309,7 +2309,7 @@ CREATE TABLE `secondary_t4` (
 
 LOCK TABLES `secondary_t4` WRITE;
 /*!40000 ALTER TABLE `secondary_t4` DISABLE KEYS */;
-INSERT INTO `secondary_t4` VALUES (1,1,'ثُ',2392),(2,1,'ثَ',3544),(3,1,'ثِ',2485),(4,1,'ثْ',1652),(5,1,'ثُّ',195),(6,1,'ثَّ',2304),(7,1,'ثً',103),(8,1,'ثٌ',104),(9,1,'ثِّ',96),(10,1,'ثٍ',117),(11,1,'ثٌّ',1);
+INSERT INTO `secondary_t4` VALUES (1,1,'ثً',209),(2,1,'ثٌ',140),(3,1,'ثٍ',331),(4,1,'ثَ',8706),(5,1,'ثُ',7523),(6,1,'ثِ',4248),(7,1,'ثْ',3193),(8,1,'ثٍّ',2),(9,1,'ثٌّ',4),(10,1,'ثًّ',2),(11,1,'ثِّ',137),(12,1,'ثُّ',182),(13,1,'ثَّ',1367);
 /*!40000 ALTER TABLE `secondary_t4` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2338,7 +2338,7 @@ CREATE TABLE `secondary_t5` (
 
 LOCK TABLES `secondary_t5` WRITE;
 /*!40000 ALTER TABLE `secondary_t5` DISABLE KEYS */;
-INSERT INTO `secondary_t5` VALUES (1,1,'جَ',10445),(2,1,'جُ',3784),(3,1,'جُّ',92),(4,1,'جِ',5364),(5,1,'جْ',4844),(6,1,'جٌ',83),(7,1,'جِّ',243),(8,1,'جَّ',1174),(9,1,'جٍ',60),(10,1,'جً',46),(11,1,'جٍّ',15),(12,1,'جًّ',7),(13,1,'جٌّ',6);
+INSERT INTO `secondary_t5` VALUES (1,1,'جٌ',105),(2,1,'جٍ',210),(3,1,'جًّ',10),(4,1,'جَ',24375),(5,1,'جُ',8408),(6,1,'جِ',7747),(7,1,'جْ',6157),(8,1,'جِّ',384),(9,1,'جُّ',132),(10,1,'جَّ',2327),(11,1,'جً',109),(12,1,'جٍّ',24),(13,1,'جٌّ',6);
 /*!40000 ALTER TABLE `secondary_t5` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2358,7 +2358,7 @@ CREATE TABLE `secondary_t6` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t6_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t6` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2367,7 +2367,7 @@ CREATE TABLE `secondary_t6` (
 
 LOCK TABLES `secondary_t6` WRITE;
 /*!40000 ALTER TABLE `secondary_t6` DISABLE KEYS */;
-INSERT INTO `secondary_t6` VALUES (1,1,'حِ',10537),(2,1,'حَ',20012),(3,1,'حْ',6574),(4,1,'حٌ',389),(5,1,'حَّ',1666),(6,1,'حُ',3801),(7,1,'حً',108),(8,1,'حُّ',1112),(9,1,'حٍ',235),(10,1,'حِّ',504),(11,1,'حٌّ',1);
+INSERT INTO `secondary_t6` VALUES (1,1,'حٍ',525),(2,1,'حَ',35274),(3,1,'حُ',6031),(4,1,'حِ',9550),(5,1,'حْ',11715),(6,1,'حِّ',210),(7,1,'حُّ',452),(8,1,'حَّ',941),(9,1,'حً',296),(10,1,'حٌ',420),(11,1,'حًّ',1),(12,1,'حٍّ',1),(13,1,'حٌّ',1),(14,1,'حًّ',1),(15,1,'حٍّ',1),(16,1,'حٌّ',2);
 /*!40000 ALTER TABLE `secondary_t6` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2396,7 +2396,7 @@ CREATE TABLE `secondary_t7` (
 
 LOCK TABLES `secondary_t7` WRITE;
 /*!40000 ALTER TABLE `secondary_t7` DISABLE KEYS */;
-INSERT INTO `secondary_t7` VALUES (1,1,'خْ',4161),(2,1,'خَ',5411),(3,1,'خُ',2930),(4,1,'خِ',3014),(5,1,'خِّ',69),(6,1,'خٌ',34),(7,1,'خَّ',140),(8,1,'خُّ',11),(9,1,'خٍ',32),(10,1,'خً',21),(11,1,'خًّ',2),(12,1,'خٍّ',3);
+INSERT INTO `secondary_t7` VALUES (1,1,'خَ',20450),(2,1,'خُ',4564),(3,1,'خِ',3366),(4,1,'خْ',7137),(5,1,'خِّ',78),(6,1,'خُّ',18),(7,1,'خَّ',203),(8,1,'خً',70),(9,1,'خٌ',73),(10,1,'خٍ',103),(11,1,'خٍّ',1),(12,1,'خٍّ',1);
 /*!40000 ALTER TABLE `secondary_t7` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2416,7 +2416,7 @@ CREATE TABLE `secondary_t8` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t8_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t8` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2425,7 +2425,7 @@ CREATE TABLE `secondary_t8` (
 
 LOCK TABLES `secondary_t8` WRITE;
 /*!40000 ALTER TABLE `secondary_t8` DISABLE KEYS */;
-INSERT INTO `secondary_t8` VALUES (1,1,'دَ',13534),(2,1,'دُ',5341),(3,1,'دِ',6969),(4,1,'دَّ',6025),(5,1,'دِّ',1428),(6,1,'دْ',2837),(7,1,'دٌ',657),(8,1,'دٍ',1626),(9,1,'دُّ',735),(10,1,'دً',678),(11,1,'دًّ',82),(12,1,'دّ',1),(13,1,'دٍّ',39),(14,1,'دٌّ',37);
+INSERT INTO `secondary_t8` VALUES (1,1,'دُ',12817),(2,1,'دِ',21855),(3,1,'دْ',9529),(4,1,'دًّ',121),(5,1,'دٌّ',35),(6,1,'دٍّ',70),(7,1,'دَّ',8667),(8,1,'دُّ',1174),(9,1,'دِّ',1422),(10,1,'دً',2089),(11,1,'دٌ',2390),(12,1,'دٍ',4220),(13,1,'دَ',34062);
 /*!40000 ALTER TABLE `secondary_t8` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2501,7 +2501,7 @@ CREATE TABLE `secondary_t9` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t9_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t9` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2510,7 +2510,7 @@ CREATE TABLE `secondary_t9` (
 
 LOCK TABLES `secondary_t9` WRITE;
 /*!40000 ALTER TABLE `secondary_t9` DISABLE KEYS */;
-INSERT INTO `secondary_t9` VALUES (1,1,'ذْ',6251),(2,1,'ذَ',11283),(3,1,'ذِّ',241),(4,1,'ذِ',2065),(5,1,'ذٍ',64),(6,1,'ذُ',793),(7,1,'ذَّ',605),(8,1,'ذً',24),(9,1,'ذُّ',50),(10,1,'ذٌ',31),(11,1,'ذٌّ',4),(12,1,'ذًّ',7);
+INSERT INTO `secondary_t9` VALUES (1,1,'ذِ',8090),(2,1,'ذْ',2906),(3,1,'ذٍّ',1),(4,1,'ذَّ',539),(5,1,'ذُّ',95),(6,1,'ذِّ',304),(7,1,'ذً',91),(8,1,'ذٌ',50),(9,1,'ذٍ',349),(10,1,'ذَ',18835),(11,1,'ذُ',1566),(12,1,'ذٌّ',4),(13,1,'ذًّ',7);
 /*!40000 ALTER TABLE `secondary_t9` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2586,7 +2586,7 @@ CREATE TABLE `secondary_t_1` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t_1_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t_1` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2595,7 +2595,7 @@ CREATE TABLE `secondary_t_1` (
 
 LOCK TABLES `secondary_t_1` WRITE;
 /*!40000 ALTER TABLE `secondary_t_1` DISABLE KEYS */;
-INSERT INTO `secondary_t_1` VALUES (1,1,'ئً',204),(2,1,'ئِ',3686),(3,1,'ئْ',251),(4,1,'ئَ',521),(5,1,'ئُ',289),(6,1,'ئٍ',37),(7,1,'ئٌ',9);
+INSERT INTO `secondary_t_1` VALUES (1,1,'ئِّ',1),(2,1,'ئً',462),(3,1,'ئٌ',34),(4,1,'ئٍ',103),(5,1,'ئَ',2568),(6,1,'ئُ',338),(7,1,'ئِ',5893),(8,1,'ئْ',489);
 /*!40000 ALTER TABLE `secondary_t_1` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2615,7 +2615,7 @@ CREATE TABLE `secondary_t_2` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t_2_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t_2` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2624,7 +2624,7 @@ CREATE TABLE `secondary_t_2` (
 
 LOCK TABLES `secondary_t_2` WRITE;
 /*!40000 ALTER TABLE `secondary_t_2` DISABLE KEYS */;
-INSERT INTO `secondary_t_2` VALUES (1,1,'إِ',14335),(2,1,'إٍ',4);
+INSERT INTO `secondary_t_2` VALUES (1,1,'إٍ',7),(2,1,'إَ',3),(3,1,'إِ',42183);
 /*!40000 ALTER TABLE `secondary_t_2` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2644,7 +2644,7 @@ CREATE TABLE `secondary_t_3` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t_3_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t_3` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2653,7 +2653,7 @@ CREATE TABLE `secondary_t_3` (
 
 LOCK TABLES `secondary_t_3` WRITE;
 /*!40000 ALTER TABLE `secondary_t_3` DISABLE KEYS */;
-INSERT INTO `secondary_t_3` VALUES (1,1,'ؤُ',267),(2,1,'ؤَ',447),(3,1,'ؤْ',301),(4,1,'ؤِ',6),(5,1,'ؤٍ',1),(6,1,'ؤً',2);
+INSERT INTO `secondary_t_3` VALUES (1,1,'ؤً',7),(2,1,'ؤٌ',32),(3,1,'ؤَ',890),(4,1,'ؤُ',648),(5,1,'ؤِ',18),(6,1,'ؤْ',1240),(7,1,'ؤٍ',29),(8,1,'ؤٍ',29);
 /*!40000 ALTER TABLE `secondary_t_3` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2673,7 +2673,7 @@ CREATE TABLE `secondary_t_4` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t_4_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t_4` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2682,7 +2682,7 @@ CREATE TABLE `secondary_t_4` (
 
 LOCK TABLES `secondary_t_4` WRITE;
 /*!40000 ALTER TABLE `secondary_t_4` DISABLE KEYS */;
-INSERT INTO `secondary_t_4` VALUES (1,1,'أَ',41566),(2,1,'أُ',2431),(3,1,'أْ',1724),(4,1,'أٌ',18),(5,1,'أِ',30),(6,1,'أٍ',10),(7,1,'أً',28);
+INSERT INTO `secondary_t_4` VALUES (1,1,'أَّ',5),(2,1,'أً',40),(3,1,'أٌ',12),(4,1,'أٍ',6),(5,1,'أَ',96980),(6,1,'أُ',6207),(7,1,'أِ',24),(8,1,'أْ',3969);
 /*!40000 ALTER TABLE `secondary_t_4` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2730,7 +2730,7 @@ CREATE TABLE `secondary_t_6` (
   KEY `p_id` (`p_id`),
   KEY `s_id` (`s_id`),
   CONSTRAINT `secondary_t_6_ibfk_1` FOREIGN KEY (`p_id`) REFERENCES `primary_t_6` (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -2739,7 +2739,7 @@ CREATE TABLE `secondary_t_6` (
 
 LOCK TABLES `secondary_t_6` WRITE;
 /*!40000 ALTER TABLE `secondary_t_6` DISABLE KEYS */;
-INSERT INTO `secondary_t_6` VALUES (1,1,'ءِ',1838),(2,1,'ءٍ',401),(3,1,'ءً',242),(4,1,'ءَ',1007),(5,1,'ءٌ',556),(6,1,'ءُ',726);
+INSERT INTO `secondary_t_6` VALUES (1,1,'ءْ',2),(2,1,'ءً',268),(3,1,'ءٌ',660),(4,1,'ءٍ',741),(5,1,'ءَ',3212),(6,1,'ءُ',1753),(7,1,'ءِ',3944);
 /*!40000 ALTER TABLE `secondary_t_6` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2752,4 +2752,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-05-29 18:15:49
+-- Dump completed on 2017-05-29 21:33:29
