@@ -144,7 +144,7 @@ for para in document.paragraphs:
 
 result =""
 counter = 0
-windowSize = 1
+windowSize = 2
 
 window = []
 for i in range(len(arr)):
