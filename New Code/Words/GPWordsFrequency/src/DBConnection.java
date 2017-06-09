@@ -4,8 +4,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-	private static String DBName = "gpwordsfrequency_samir";
-	private static String Password = "20130133";
+	private static String DBName = "gpwordsfrequency(1-3)";
+	private static String Password = "20130334";
 	
 	private static Connection connection = null;
 

@@ -134,10 +134,12 @@ public class main {
 
 	
 	public static void fun(int c) throws InvalidFormatException, IOException, SQLException{
-		int window = 3;
-		String s, word1, word2, s1_s2 = "";
-	    String[] paths = {"2.docx"};
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
+//		int window = 3;
+		String s, word1, word2, s1_s2 = "";//5alas l7d mai1, habd2 mn mai2
+		String[] paths = {"amira2.docx", "amira3.docx","mai3.docx","mai4.docx"};
+//		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
+		String chars = "ا";
+
 		HashMap<String, ArrayList<String>> map = new HashMap<>() ;
 		System.out.println("Loading from Database table: " + chars.charAt(c));
 		map = Primary.selection(chars.charAt(c));
@@ -145,7 +147,7 @@ public class main {
 		for (int z = 0; z < paths.length; z++) {
 			String[] words = readFile(paths[z]);
 			for (int i = 0; i < (words.length) ; i++) {
-				String[] s1 = new String[window * 2];  // array of windows
+				String[] s1 = new String[4];  // array of windows
 				s = words[i];
 				word1 = removeSamples(s); // word1 awel kelma
 				//word1 = removeTashkeel(word1);
@@ -157,7 +159,7 @@ public class main {
 				if(!s.contains(".") || !s.contains("،")){
 					//System.out.println(s);
 					
-				for (; w < window; w++) {
+				for (; w < 3; w++) {
 					if (ii == words.length)
 						break;
 					if (words[ii].equals(".") || words[ii].equals("،"))
@@ -181,7 +183,7 @@ public class main {
 				//System.out.println(word1 + ", " + w);
 				ii = i - 1;
 				int cnt = 0; 
-				for (; cnt < window; cnt++,w++) { // back
+				for (; cnt < 1; cnt++,w++) { // back
 					if (ii < 0)
 						break;
 					if (words[ii].equals(".") || words[ii].equals("،"))
@@ -203,6 +205,9 @@ public class main {
 						continue;
 					word2 = removeSamples(s1[p]); // s2 tany kelma
 					word2 = removeTashkeel(word2);
+//					System.out.println("== " +word1+" "+word2);
+					if(word2.length() == 0)
+						continue;
 					s1_s2 = word1 + "&" + word2; // هid
 					//System.out.println(s + "&" + s1[p]);
 					if (s1_s2.charAt(0) == chars.charAt(c)) {
@@ -245,8 +250,9 @@ public class main {
  
 	public static void main(String[] args) throws InvalidFormatException,
 			IOException, SQLException {
- 
-		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
+		String chars = "ا";
+
+//		String chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهويچآءأإ";
 		for (int c = 0; c < chars.length(); c++) {
 			fun(c);
 		}
