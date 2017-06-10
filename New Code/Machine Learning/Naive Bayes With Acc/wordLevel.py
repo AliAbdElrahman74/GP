@@ -15,14 +15,14 @@ class Database:
     def __init__(self):
         self.db1 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='20130163',
-                     db='gpwordsmodwanna_amira',
+                     passwd='20130133',
+                     db='gpwordsmodwwana_samirV2',
                      charset='UTF8',
                      use_unicode=True)
         self.db2 = MySQLdb.connect(host='localhost',
                      user='root',
-                     passwd='20130163',
-                     db='gpwordfrequencynew_2_2',
+                     passwd='20130133',
+                     db='gpwordsfrequency_samir',
                      charset='UTF8',
                      use_unicode=True)
 
@@ -134,17 +134,19 @@ def fun(word1, word2):
 start_time = time.time()
 
 arr = []
-document = Document('input.docx')
-for para in document.paragraphs:
-    words = para.text.split(' ')
-    for word in words:
-        word = removeSamples(word)
-        if len(word) > 0:
-            arr.append(word)
+inputFiles = ['input.docx']
+for inputFile in inputFiles:
+    document = Document(inputFile)
+    for para in document.paragraphs:
+        words = para.text.split(' ')
+        for word in words:
+            word = removeSamples(word)
+            if len(word) > 0:
+                arr.append(word)
 
 result =""
 counter = 0
-windowSize = 2
+windowSize = 3
 
 window = []
 for i in range(len(arr)):
@@ -219,13 +221,15 @@ result = result.split(" ")
 
 # replace this with reading from doc file
 output = []
-document = Document('testing.docx')
-for para in document.paragraphs:
-    words = para.text.split(' ')
-    for word in words:
-        word = removeSamples(word)
-        if len(word) > 0:
-            output.append(word)
+testingFiles = ['testing.docx']
+for testingFile in testingFiles:
+    document = Document(testingFile)
+    for para in document.paragraphs:
+        words = para.text.split(' ')
+        for word in words:
+            word = removeSamples(word)
+            if len(word) > 0:
+                output.append(word)
             
 print len(result)
 print len(output)
