@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# encoding=utf8 
+# encoding=utf8
 
 import math
 import MySQLdb
@@ -42,7 +42,7 @@ def getIdPrimary(word):
         table += "_" + str(-1 * num)
     else:
         table += "" + str(num)
-        
+
     sql = "SELECT id from " + table + " where word = '%s' ;" %word
     try:
        cursor1.execute(sql)
@@ -132,22 +132,7 @@ def fun(word1, word2):
     return result
 
 
-
-start_time = time.time()
-
-arr = []
-inputFiles = ['input.docx']
-for inputFile in inputFiles:
-    document = Document(inputFile)
-    for para in document.paragraphs:
-        words = para.text.split(' ')
-        for word in words:
-            word = removeSamples(word)
-            if len(word) > 0:
-                arr.append(word)
-
-
-class StringGenerator(object): 
+class StringGenerator(object):
     @cherrypy.expose
     def index(self):
         return """
@@ -158,11 +143,11 @@ class StringGenerator(object):
 		  <title>MOSHAKEL</title>
 		  <meta charset="utf-8">
 		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
 		  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 		  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <script src="js/jquery.min.js"></script>
+		  <script src="js/bootstrap.min.js"></script>
 		  <style>
 		  body {
 		      font: 400 15px/1.8 Lato, sans-serif;
@@ -422,20 +407,22 @@ class StringGenerator(object):
 		<div class="alert alert-danger" style="display: none;" id="nonArabic">
 		  <strong>Danger!</strong> only Arabic letters are allowed :)).
 		</div>
-		
+
 		</form>
 		</div>
 
 		<div id = "test" class="container">
-		  <form id="fileForm" action="fileInput" method="post">
-			<br>
+		  <form id="fileForm" action="fileInput" method="post" enctype="multipart/form-data">
+            <br>
 			    <label for="pwd">Or simply add your file here :</label>
 			<br>
-		    <label class="btn btn-default">
-			Browse <input type="file" name="file" form="fileForm" hidden>
+            <label class="btn btn-default">
+			    Browse <input type="file" name="myFile" form="fileForm" hidden>
 		    </label>
-		    <button type="submit" class="btn btn-default">Submit</button>
-		</form>
+            <br>
+            <br>
+            <input type="submit" class="btn btn-default" value="Submit"/>
+		  </form>
 		</div>
 
 
@@ -448,7 +435,7 @@ class StringGenerator(object):
 		    <div class="col-md-4">
 		      <p><span class="glyphicon glyphicon-map-marker"></span>Giza, Egypt</p>
 		      <p><span class="glyphicon glyphicon-phone"></span>Phone: 01118574649</p>
-		      <p><span class="glyphicon glyphicon-envelope"></span>Email: aliabdelrahmanweka74@mail.com</p>
+		      <p><span class="glyphicon glyphicon-envelope"></span>Email: aliabdelrahmanweka74@gmail.com</p>
 		    </div>
 		    <div class="col-md-8">
 
@@ -590,27 +577,26 @@ class StringGenerator(object):
 		</body>
 		</html>
         """
-    @cherrypy.expose   
-    def fileInput(self, file):
-	print (file)
-	arr = []
-	inputFiles = [file]
-	for inputFile in inputFiles:
-	    document = Document(inputFile)
-	    for para in document.paragraphs:
-		words = para.text.split(' ')
-		for word in words:
-		    word = removeSamples(word)
-		    if len(word) > 0:
-			arr.append(word)
-	return self.generate(arr)
-	
-    @cherrypy.expose   
-    def textInput(self, text):
-	arr = text.split(' ')		
-	return self.generate(arr)
 
-    @cherrypy.expose   
+    @cherrypy.expose
+    def fileInput(self, myFile):
+        allData = ""
+        while True:
+            data = myFile.file.read(8192)
+            allData += data
+            if not data:
+                break
+        arr = unicode(allData, "utf-8").split(' ')
+        return self.generate(arr)
+
+    fileInput.exposed = True
+
+    @cherrypy.expose
+    def textInput(self, text):
+    	arr = text.split(' ')
+    	return self.generate(arr)
+
+    @cherrypy.expose
     def generate(self, arr):
 		result =""
 		counter = 0
@@ -695,11 +681,11 @@ class StringGenerator(object):
 			  <title>MOSHAKEL</title>
 			  <meta charset="utf-8">
 			  <meta name="viewport" content="width=device-width, initial-scale=1">
-			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			  <link rel="stylesheet" href="css/bootstrap.min.css">
 			  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
 			  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-			  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			  <script src="js/jquery.min.js"></script>
+			  <script src="js/bootstrap.min.js"></script>
 			  <style>
 			  body {
 			      font: 400 15px/1.8 Lato, sans-serif;
@@ -901,7 +887,7 @@ class StringGenerator(object):
 			    <div class="col-md-4">
 			      <p><span class="glyphicon glyphicon-map-marker"></span>Giza, Egypt</p>
 			      <p><span class="glyphicon glyphicon-phone"></span>Phone: 01118574649</p>
-			      <p><span class="glyphicon glyphicon-envelope"></span>Email: aliabdelrahmanweka74@mail.com</p>
+			      <p><span class="glyphicon glyphicon-envelope"></span>Email: aliabdelrahmanweka74@gmail.com</p>
 			    </div>
 			    <div class="col-md-8">
 
@@ -970,4 +956,11 @@ class StringGenerator(object):
 		     </html>
 		"""
 if __name__ == '__main__':
-    cherrypy.quickstart(StringGenerator())
+	conf = {'/images': {'tools.staticdir.on': True,
+        'tools.staticdir.dir': '/home/samir/Desktop/demo/images'},
+            '/css': {'tools.staticdir.on': True,
+                'tools.staticdir.dir': '/home/samir/Desktop/demo/css'},
+            '/js': {'tools.staticdir.on': True,
+                'tools.staticdir.dir': '/home/samir/Desktop/demo/js'}
+        }
+    	cherrypy.quickstart(StringGenerator(), '/', config=conf)
