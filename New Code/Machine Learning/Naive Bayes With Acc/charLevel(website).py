@@ -134,7 +134,7 @@ def generatee(text):
 
     result =""
     counter = 0
-    windowSize = 1
+    windowSize = 2
 
     arr = text
     #print arr[0]
